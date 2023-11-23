@@ -23,24 +23,72 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>My portfolio</title>
   </head>
+  <style>
+    .background-shape-container {
+      position: relative;
+      min-height: 100vh;
+      background: var(--app-background);
+      overflow: hidden;
+    }
+    .shape {
+      position: absolute;
+      background-color: #005599;
+      border-radius: 8px;
+      transform: rotate(-10deg);
+    }
+    .content {
+      position: relative;
+      z-index: 10;
+      /* Your content styles */
+    }
+  </style>
 
   
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div ><a href="resume.html" id="resume-button">Go to my Resume</a></div>
-    <div id="root"></div>
+    <div class="background-shape-container" id="shapeContainer">
     
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+      <div class="content">
+        <!-- Your actual content goes here -->
+        <div ><a href="resume.html" id="resume-button">Go to my Resume</a></div>
+        <div id="root"></div>
+      </div>
+    </div>
+    <script>
+      // Function to create a shape element with specific styles
+      function createShape(styleClasses, posX, posY, width, height, rotation) {
+        const shape = document.createElement('div');
+        shape.classList.add(...styleClasses);
+        shape.style.left = posX + 'px';
+        shape.style.top = posY + 'px';
+        shape.style.width = width + 'px';
+        shape.style.height = height + 'px';
+        shape.style.transform = `rotate(${rotation}deg)`;
+        return shape;
+      }
+    
+      // Function to randomly generate shapes within the container
+      function generateShapes(container, numberOfShapes) {
+        const containerWidth = container.offsetWidth;
+        const containerHeight = container.offsetHeight;
+    
+        for (let i = 0; i < numberOfShapes; i++) {
+          const width = Math.random() * 150 + 50; // Shape width between 30px and 150px
+          const height = Math.random() * 120 + 30; // Shape height between 30px and 150px
+          const posX = Math.random() * (containerWidth - width); // Random X position
+          const posY = Math.random() * (containerHeight - height); // Random Y position
+          const rotation = Math.random() * 360; // Random rotation between 0 and 360 degrees
+    
+          const shape = createShape(['shape'], posX, posY, width, height, rotation);
+          container.appendChild(shape);
+        }
+      }
+    
+      // Get the container element and generate shapes
+      const shapeContainer = document.getElementById('shapeContainer');
+      generateShapes(shapeContainer, 40); // Generate 50 shapes
+    </script>
   </body>
 </html>
