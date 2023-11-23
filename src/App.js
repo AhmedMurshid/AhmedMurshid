@@ -18,8 +18,8 @@ const App = () => {
 
 
   const myLinks = [
-    { title: 'LinkedIn', url: 'https://www.linkedin.com/in/yourprofile' },
-    { title: 'GitHub', url: 'https://github.com/yourusername' },
+    { title: 'LinkedIn', url: 'https://www.linkedin.com/in/ahmed001a/' },
+    { title: 'GitHub', url: 'https://github.com/AhmedMurshid' },
     // ... other links
   ];
 
@@ -30,12 +30,13 @@ const App = () => {
 
   return (
     <div className="App">
+    
     {/*  */}
     
     <button className="show-resume-button" onClick={toggleDarkMode} >Toggle Dark Mode</button>
 
     <div className='toprow'>
-    <h1>Ahmed Abdullahi</h1>
+    <h1>Ahmed M Abdullahi</h1>
       
 
       
@@ -51,19 +52,19 @@ const App = () => {
         </div>
         <div className='group-of-blocks'>
 
-        <div className="Blocks">
-          <WorkExperienceContainer workExperiences={resumeData.work_experience} />
-          
-        </div>
+          <div className="Blocks">
+            <WorkExperienceContainer workExperiences={resumeData.work_experience} />
+            
+          </div>
 
-        <div className="Blocks">
-          <ProjectContainer workExperiences1={resumeData.work_experience1} /> 
-        </div>
+          <div className="Blocks">
+            <ProjectContainer workExperiences1={resumeData.work_experience1} /> 
+          </div>
 
-      
           <div className="Blocks">
               <ContactContainer contactInfo={resumeData.contact} />
           </div>
+          
           <div className='Blocks'>
             <LinksContainer links={myLinks} />
           </div>
@@ -71,6 +72,8 @@ const App = () => {
     
       </div>
       </div>
+  
+      
      
     </div>
   );
