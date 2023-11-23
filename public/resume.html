@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My resume page</title>
+</head>
+
+<body>
+    <script>
+        fetch('resume1.json')
+    .then(response => response.json())
+    .then(data => {
+        document.querySelector(".name").textContent = data.name;
+        document.querySelector(".email").textContent = `Email: ${data.contact.email}`;
+        document.querySelector(".phone").textContent = `Phone: ${data.contact.phone}`;
+        document.querySelector(".location").textContent = `Location: ${data.contact.location}`;
+        document.querySelector(".degree").textContent = data.education.degree;
+        document.querySelector(".school").textContent = data.education.school;
+        document.querySelector(".anticipated-graduation").textContent = `Anticipated Graduation: ${data.education.anticipated_graduation}`;
+        document.querySelector(".gpa").textContent = `GPA: ${data.education.gpa}`;
+        document.querySelector(".objective").textContent = data.objective;
+        document.querySelector(".when").textContent = data.when;
+
+        const technicalSkillsList = document.querySelector(".technical-skills-list");
+        for (const category in data.technical_skills) {
+            const categorySkills = data.technical_skills[category];
+            const categoryList = document.createElement("div");
+            for (const skill of categorySkills) {
+                const skillItem = document.createElement("div");
+                skillItem.textContent = skill;
+                categoryList.appendChild(skillItem);
+            }
+            const categoryItem = document.createElement("div");
+            categoryItem.textContent = category;
+            categoryItem.appendChild(categoryList);
+            technicalSkillsList.appendChild(categoryItem);
+        }
+
+        const appliedExperienceList = document.querySelector(".applied-experience-list");
+        for (const project of data.applied_experience.projects) {
+            const projectItem = document.createElement("div");
+            projectItem.innerHTML = `<h3>${project.language} Project</h3><p class="p-re">${project.description}</p>`;
+            appliedExperienceList.appendChild(projectItem);
+        }
+
+        const workExperienceList = document.querySelector(".work-experience-list");
+        for (const job of data.work_experience) {
+            const jobItem = document.createElement("div");
+            jobItem.innerHTML = `<h3>${job.position} - ${job.company}</h3><p class="p-re">${job.duration}</p><p class="p-re">${job.location}</p>`;
+            if (job.responsibilities) {
+                const responsibilitiesList = document.createElement("div");
+                for (const responsibility of job.responsibilities) {
+                    const responsibilityItem = document.createElement("div");
+                    responsibilityItem.textContent = responsibility;
+                    responsibilitiesList.appendChild(responsibilityItem);
+                }
+                jobItem.appendChild(responsibilitiesList);
+            }
+            workExperienceList.appendChild(jobItem);
+        }
+
+        const activitiesHobbiesList = document.querySelector(".activities-hobbies-list");
+        for (const hobby of data.activities_honors.hobbies) {
+            const hobbyItem = document.createElement("div");
+            hobbyItem.textContent = hobby;
+            activitiesHobbiesList.appendChild(hobbyItem);
+        }
+
+        const activitiesHonorsList = document.querySelector(".activities-honors-list");
+        for (const honor of data.activities_honors.honors) {
+            const honorItem = document.createElement("div");
+            honorItem.textContent = honor;
+            activitiesHonorsList.appendChild(honorItem);
+        }
+
+        const programsAndVolunteerList = document.querySelector(".programs-volunteer-list");
+        for (const program of data.programs_and_volunteer) {
+            const programItem = document.createElement("div");
+            programItem.textContent = program;
+            programsAndVolunteerList.appendChild(programItem);
+        }
+    })
+    .catch(error => console.error('Error fetching JSON:', error));
+
+    </script>
+
+<div class="resume-content1">
+  <h1 class="name">{name}</h1>
+  <div class='contact-info'>
+    <h2 class='h2-re'>Contact</h2>
+    <p class='p-re email'>Email: {contact.email}</p>
+    <p class='p-re phone'>Phone: {contact.phone}</p>
+    <p class='p-re location'>Location: {contact.location}</p>
+  </div>
+  <div class='goal-education'>
+    <h2 class='h2-re'>Education</h2>
+    <p class='p-re degree'>{education.degree}</p>
+    <p class='p-re school'>{education.school}</p>
+    <p class='p-re anticipated-graduation'>Anticipated Graduation: {education.anticipated_graduation}</p>
+    <p class='p-re gpa'>GPA: {education.gpa}</p>
+    <h2 class='h2-re'>Objective</h2>
+    <p class='p-re objective'>{objective}</p>
+    <h2 class='h2-re'>When</h2>
+    <p class='p-re when'>{when}</p>
+  </div>
+  <div class='skills'>
+    <h2 class='h2-re'>Technical Skills</h2>
+    <div class='technical-skills-list'>
+      <!-- The JavaScript code will populate technical skills here. -->
+    </div>
+  </div>
+  <div class='projects-re'>
+    <h2 class='h2-re'>Applied Experience</h2>
+    <div class='applied-experience-list'>
+      <!-- The JavaScript code will populate applied experience projects here. -->
+    </div>
+  </div>
+  <div class='work-exp'>
+    <h2 class='h2-re'>Work Experience</h2>
+    <div class='work-experience-list'>
+      <!-- The JavaScript code will populate work experience here. -->
+    </div>
+  </div>
+  <div class='acti'>   
+    <h2 class='h2-re'>Activities & Honors</h2>
+    <div class='activities-hobbies-list'>
+      <!-- The JavaScript code will populate hobbies here. -->
+    </div>
+    <div class='activities-honors-list'>
+      <!-- The JavaScript code will populate honors here. -->
+    </div>
+  </div>
+  <div class='volun'>
+    <h2 class='h2-re'>Programs & Volunteer Work</h2>
+    <div class='programs-volunteer-list'>
+      <!-- The JavaScript code will populate programs and volunteer work here. -->
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
