@@ -1,38 +1,105 @@
-.App {
+/* .App {
+  display: block;
+  background: var(--app-background);
+  
+  border: 4px solid var(--border-color);
+  margin: 0px;
+  padding: 0%;
+  overflow: hidden;
+  color: var(--text-color);
+   */
+  /* align-items: stretch; */
+
+/* }
+.image-container{
+  width: auto;
+  overflow: hidden;
+} */
+.App{
+  padding: 1%;
+}
+h1,h2,h3,h4,h5,h6{
+  color: var(--text-color);
+}
+.toprow {
   text-align: center;
+  font-size: 2em;
+  transform: scale(0.9);
+  transform-origin: top center;
+  margin-top: -3%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* .group-of-blocks {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  border: 1px solid #006eff;
+  transform: 0 scale(0.7);
+  padding: 0 1%;
+  margin: 0 0%;
+  overflow: auto;
+
+} */
+.group-of-blocks {
+  transform: scale(0.9);
+  transform-origin: 0 0; 
+  position: relative;
+  left: 40em;
+  top: -40%;
+  display: flex;
+
+
+}
+.group-of-blocks .Blocks {
+  width: 40em; /* Adjust the width as needed */
+  margin-right: 1em; /* Add some spacing between the items */
+}
+.group-of-blocks .item:last-child {
+  margin-right: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.Blocks3{
+  width: 30%;
+  position: absolute;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+/* .Blocks {
+  border: 1px solid #f40000;
+  padding: 1%;
+  margin: 0% 0%;
+  width: 40ex; 
+  height: auto;
+  box-sizing: border-box;
+  font-size: 1rem; */
+  /* transform: (0.9); */
+
+/* } */
+
+
+/* .Blocks2 {
+  width: 20ex;
+  height: 25ex;
+  border:1px solid #00ff0d;
+  padding-left: 0; 
+  display: flex; 
+  flex-direction: row; 
+} */
+
+
+.show-resume-button {
+  width: 100%;
+  clear: both;
 }
+
+
+.show-resume-button {
+  width: 200px;
+  padding: 20px;
+  margin-right: 5%;
+  margin-top: -5%;
+}
+
+

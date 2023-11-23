@@ -1,0 +1,40 @@
+:root {
+  /* Light theme colors with navy blue */
+  --app-background-light: #ffffff; /* White background for light theme */
+  --border-color-light: #e3e3e3; /* Light grey borders for a subtle contrast */
+  --text-color-light: #000080; /* Navy blue text for good readability */
+  --container-color-light: #f8f9fa; /* Very light grey for container elements */
+  --container-bg-color-light: #ffffff; /* White background for container elements */
+
+  /* Dark theme colors with navy blue */
+  --app-background-dark: #131355; /* Very dark navy blue for the main background */
+  --border-color-dark: #333366; /* A slightly lighter navy tone for borders */
+  --text-color-dark: #FFFFFF; /* White text for high contrast on dark background */
+  --container-color-dark: #000050; /* A slightly lighter dark navy for containers */
+  --container-bg-color-dark: #00002E; /* Matching the main background */
+}
+
+
+
+
+/* Default to light theme */
+body {
+  --app-background:var(--app-background-light);
+  --border-color: var(--border-color-light);
+  --text-color: var(--text-color-light);
+  --highlight-color: var(--highlight-color-light);
+  --shadow-color: var(--shadow-color-light);
+  --container-color: var(--container-color-light);
+  --bg-container-color: var(--container-bg-color-light);
+}
+
+/* Dark theme when .dark-mode class is applied to body */
+body.dark-mode {
+  --app-background: var(--app-background-dark);
+  --border-color: var(--border-color-dark);
+  --text-color: var(--text-color-dark);
+  --highlight-color: var(--highlight-color-dark);
+  --shadow-color: var(--shadow-color-dark);
+  --container-color: var(--container-color-dark);
+  --bg-container-color: var(--container-bg-color-dark);
+}

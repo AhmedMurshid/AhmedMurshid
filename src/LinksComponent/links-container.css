@@ -1,0 +1,76 @@
+
+.links-container {
+  background: var(--bg-container-color);
+  border: 2px solid #333;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+
+.links-container::before,
+.links-container::after {
+  content: '';
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background:var(--container-color);
+  opacity: 0.2;
+}
+
+.links-container::before {
+  left: -75px;
+  top: -75px;
+  clip-path: polygon(50% 0%, 0 100%, 100% 100%);
+}
+
+.links-container::after {
+  right: -75px;
+  bottom: -75px;
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.links-container h2,
+.links-container ul,
+.links-container li,
+.links-container li a {
+  font-family: 'Roboto', sans-serif;
+  text-shadow: none;
+  color: var(--text-color);
+}
+
+.links-ul-container {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.links-container .link-ul-container li {
+  list-style-type: none;
+  margin: 1%;
+  margin-left: 0;
+  transition: transform 0.2s;
+}
+
+.links-container li {
+  background-color: var(--container-color);
+  border: 1px solid #333;
+  border-radius: 5px;
+  padding: 2%;
+  box-shadow: none;
+}
+
+.links-container li a {
+  text-decoration: none;
+  display: block;
+  color: var(--text-color);
+}
+
+.links-container li a:hover {
+  color: var(--text-color);
+  transform: translateY(-2px);
+}

@@ -1,25 +1,84 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
 
-function App() {
+import WorkExperienceContainer from './WorkExperienceComponent/WorkExperienceContainer';
+import ContactContainer from './ContactComponent/ContactContainer';
+import LinksContainer from './LinksComponent/LinksContainer';
+import ProjectContainer from './ProjectComponent/ProjectsContainer';
+import Resume from './ResumeComponent/Resume'; 
+import PageResume from './ResumeComponent/Resume'; 
+
+import resumeData from './resume.json';
+import './App.css';
+import './base.css';
+import './responsive.css';
+import ImageContainer from './ImagesComponent/ImageContainer';
+
+
+
+
+const App = () => {
+
+
+  const myLinks = [
+    { title: 'LinkedIn', url: 'https://www.linkedin.com/in/yourprofile' },
+    { title: 'GitHub', url: 'https://github.com/yourusername' },
+    // ... other links
+  ];
+
+  function toggleDarkMode() {
+    const body = document.body;
+    body.classList.toggle('dark-mode');
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    {/*  */}
+    
+    <button className="show-resume-button" onClick={toggleDarkMode} >Toggle Dark Mode</button>
+    <div className="">
+          <PageResume/>
+      </div>
+
+    <div className='toprow'>
+    <h1>Ahmed Abdullahi</h1>
+      
+
+      
+      <div className="resume-content" style={{ display: 'none' }}>
+        <Resume data={resumeData} />
+      </div>
+    </div>
+    <div className='container'>
+        <div className='Blocks3'>
+            <ImageContainer
+            imageUrl={require("./image1.png")}
+            altText="A sample image"/>
+        </div>
+        <div className='group-of-blocks'>
+
+        <div className="Blocks">
+          <WorkExperienceContainer workExperiences={resumeData.work_experience} />
+          
+        </div>
+
+        <div className="Blocks">
+          <ProjectContainer workExperiences1={resumeData.work_experience1} /> 
+        </div>
+
+      
+          <div className="Blocks">
+              <ContactContainer contactInfo={resumeData.contact} />
+          </div>
+          <div className='Blocks'>
+            <LinksContainer links={myLinks} />
+          </div>
+        
+    
+      </div>
+      </div>
+     
     </div>
   );
-}
+};
 
 export default App;
