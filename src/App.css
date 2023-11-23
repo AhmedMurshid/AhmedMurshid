@@ -1,23 +1,3 @@
-/* .App {
-  display: block;
-  background: var(--app-background);
-  
-  border: 4px solid var(--border-color);
-  margin: 0px;
-  padding: 0%;
-  overflow: hidden;
-  color: var(--text-color);
-   */
-  /* align-items: stretch; */
-
-/* }
-.image-container{
-  width: auto;
-  overflow: hidden;
-} */
-body{
-  background: var(--app-background);
-}
 .App{
   padding: 1%;
 }
@@ -31,18 +11,6 @@ h1,h2,h3,h4,h5,h6{
   transform-origin: top center;
   margin-top: -3%;
 }
-/* .group-of-blocks {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: stretch;
-  border: 1px solid #006eff;
-  transform: 0 scale(0.7);
-  padding: 0 1%;
-  margin: 0 0%;
-  overflow: auto;
-
-} */
 .group-of-blocks {
   transform: scale(0.9);
   transform-origin: 0 0; 
@@ -54,8 +22,8 @@ h1,h2,h3,h4,h5,h6{
 
 }
 .group-of-blocks .Blocks {
-  width: 40em; /* Adjust the width as needed */
-  margin-right: 1em; /* Add some spacing between the items */
+  width: 40em; 
+  margin-right: 1em; 
 }
 .group-of-blocks .item:last-child {
   margin-right: 0;
@@ -68,43 +36,4 @@ h1,h2,h3,h4,h5,h6{
 
 
 }
-
-
-
-/* .Blocks {
-  border: 1px solid #f40000;
-  padding: 1%;
-  margin: 0% 0%;
-  width: 40ex; 
-  height: auto;
-  box-sizing: border-box;
-  font-size: 1rem; */
-  /* transform: (0.9); */
-
-/* } */
-
-
-/* .Blocks2 {
-  width: 20ex;
-  height: 25ex;
-  border:1px solid #00ff0d;
-  padding-left: 0; 
-  display: flex; 
-  flex-direction: row; 
-} */
-
-/* 
-.show-resume-button {
-  width: 100%;
-  clear: both;
-}
-
-
-.show-resume-button {
-  width: 200px;
-  padding: 20px;
-  margin-right: 5%;
-  margin-top: -5%;
-}
- */
 
