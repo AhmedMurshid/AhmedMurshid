@@ -5,12 +5,10 @@ import ContactContainer from './ContactComponent/ContactContainer';
 import LinksContainer from './LinksComponent/LinksContainer';
 import ProjectContainer from './ProjectComponent/ProjectsContainer';
 import Resume from './ResumeComponent/Resume'; 
-import PageResume from './ResumeComponent/Resume'; 
 
 import resumeData from './resume.json';
 import './App.css';
 import './base.css';
-import './responsive.css';
 import ImageContainer from './ImagesComponent/ImageContainer';
 
 
@@ -35,9 +33,6 @@ const App = () => {
     {/*  */}
     
     <button className="show-resume-button" onClick={toggleDarkMode} >Toggle Dark Mode</button>
-    <div className="">
-          <PageResume/>
-      </div>
 
     <div className='toprow'>
     <h1>Ahmed Abdullahi</h1>
