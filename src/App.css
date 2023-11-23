@@ -15,6 +15,9 @@
   width: auto;
   overflow: hidden;
 } */
+body{
+  background: var(--app-background);
+}
 .App{
   padding: 1%;
 }
@@ -44,7 +47,7 @@ h1,h2,h3,h4,h5,h6{
   transform: scale(0.9);
   transform-origin: 0 0; 
   position: relative;
-  left: 40em;
+  left: 21em;
   top: -40%;
   display: flex;
 
@@ -59,8 +62,10 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .Blocks3{
-  width: 30%;
+  width: auto;
   position: absolute;
+  border-radius: 10px;
+
 
 }
 
@@ -88,7 +93,7 @@ h1,h2,h3,h4,h5,h6{
   flex-direction: row; 
 } */
 
-
+/* 
 .show-resume-button {
   width: 100%;
   clear: both;
@@ -101,5 +106,5 @@ h1,h2,h3,h4,h5,h6{
   margin-right: 5%;
   margin-top: -5%;
 }
-
+ */
 

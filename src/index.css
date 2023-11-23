@@ -5,10 +5,25 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: var(--app-background);
+  /* background: var(--app-background); */
+  padding: 1ex;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+#resume-button {
+  border: 1px solid green;
+  padding: 1em;
+  background-color: rgb(37, 221, 21); /* Adjust the RGB values to your preference */
+  width: 8em;
+  height: auto;
+  float: right;
+  color: white; 
+  text-decoration: none; 
+  display: block; 
+  border-radius: 10px;
+  box-shadow: 0px 0px 30px green;
+  background: transparent 10%;
 }
