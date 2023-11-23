@@ -1,13 +1,13 @@
 :root {
   /* Light theme colors with navy blue */
-  --app-background-light: #bbfff6; /* White background for light theme */
+  --app-background-light: #6bcfc2; /* White background for light theme */
   --border-color-light: #e3e3e3; /* Light grey borders for a subtle contrast */
   --text-color-light: #000080; /* Navy blue text for good readability */
   --container-color-light: #f8f9fa; /* Very light grey for container elements */
   --container-bg-color-light: #ffffff; /* White background for container elements */
 
   /* Dark theme colors with navy blue */
-  --app-background-dark: #ffffff; /* Very dark navy blue for the main background */
+  --app-background-dark: #19273f; /* Very dark navy blue for the main background */
   --border-color-dark: #040407; /* A slightly lighter navy tone for borders */
   --text-color-dark: #FFFFFF; /* White text for high contrast on dark background */
   --container-color-dark: #262635; /* A slightly lighter dark navy for containers */
@@ -19,10 +19,10 @@
 
 /* Default to light theme */
 body {
-    background-image: url('day2.png');    
+    /* background-image: url('day2.png');    
     background-size: cover; 
     background-position: center; 
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;  */
   --app-background:var(--app-background-light);
   --border-color: var(--border-color-light);
   --text-color: var(--text-color-light);
@@ -31,17 +31,7 @@ body {
   --container-color: var(--container-color-light);
   --bg-container-color: var(--container-bg-color-light);
 }
-body.dark-mode::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: inherit;
-  filter: brightness(30%) contrast(100%) hue-rotate(500deg);
-  z-index: -1;
-}
+
 /* Dark theme when .dark-mode class is applied to body */
 body.dark-mode {
 
