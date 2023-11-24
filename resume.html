@@ -83,24 +83,29 @@ for (let i = 0; i < categories.length; i++) {
 
         const workExperienceList = document.querySelector(".work-experience-list");
 
-        // Use a loop that iterates over the first two items
-        for (let i = 0; i < 2 && i < data.work_experience.length; i++) {
-            const job = data.work_experience[i];
-            const jobItem = document.createElement("div");
-            jobItem.innerHTML = `<h3>${job.position} - ${job.company}</h3><p class="p-re">${job.duration}</p><p class="p-re">${job.location}</p>`;
-            
-            if (job.responsibilities) {
-                const responsibilitiesList = document.createElement("div");
-                for (const responsibility of job.responsibilities) {
-                    const responsibilityItem = document.createElement("div");
-                    responsibilityItem.textContent = responsibility;
-                    responsibilitiesList.appendChild(responsibilityItem);
-                }
-                jobItem.appendChild(responsibilitiesList);
-            }
-            
-            workExperienceList.appendChild(jobItem);
+// Use a loop that iterates over the first two items
+for (let i = 0; i < 2 && i < data.work_experience.length; i++) {
+    const job = data.work_experience[i];
+    const jobItem = document.createElement("div");
+    jobItem.innerHTML = `<h3>${job.position} - ${job.company}</h3><h5 class="p-re">${job.duration}</h5><h6 class="p-re">${job.location}</h6>`;
+    
+    if (job.responsibilities) {
+        const responsibilitiesList = document.createElement("div");
+        for (let j = 0; j < job.responsibilities.length; j++) {
+            const responsibility = job.responsibilities[j];
+            const responsibilityItem = document.createElement("div");
+            // Generate a unique class name for each responsibility item
+            const className = `responsibility1`;
+            responsibilityItem.textContent = responsibility;
+            responsibilityItem.classList.add(className); // Add the unique class to the responsibility item
+            responsibilitiesList.appendChild(responsibilityItem);
         }
+        jobItem.appendChild(responsibilitiesList);
+    }
+    
+    workExperienceList.appendChild(jobItem);
+}
+
 
 
         const activitiesHobbiesList = document.querySelector(".activities-hobbies-list");

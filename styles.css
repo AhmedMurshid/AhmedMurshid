@@ -85,19 +85,12 @@ h5{
 }
 .goal{
     display: grid;
-    grid-template-columns: 2fr 1fr; /* This will make the left column twice as wide as the right */
+    grid-template-columns: 3fr 1fr; /* This will make the left column twice as wide as the right */
     grid-gap: 1em; 
 }
-
-/* Style the skills section */
-/* .skills {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 1em; 
-} */
 .pro-work{
     display: grid;
-    grid-template-columns: 1.3fr 1fr; 
+    grid-template-columns: 1fr 1.4fr; 
     grid-gap: 5px; 
 }
 
@@ -160,15 +153,15 @@ h5{
   
   /* Paragraph text styling */
   .p-re {
-    font-size: .9em; /* Standard font size for readability */
-    margin: -0.2em 0; /* Adds spacing between lines without creating huge gaps */
+    font-size: .9em;
+    margin: -0.2em 0; 
   }
   
   /* Specific styling for contact info to make it less prominent */
   .contact-info .p-re {
-    font-weight: normal; /* Regular font weight for contact information */
-    color: #666; /* Lighter color for less emphasis */
-    font-size: 0.9em; /* Slightly smaller font size for contact details */
+    font-weight: normal; 
+    color: #666; 
+    font-size: 0.9em; 
   }
   
   /* If you would like to highlight the GPA and important details */
@@ -210,4 +203,6 @@ h5{
   .rounded-cell {
     border-radius: 10px; /* You can adjust the radius as needed */
   }
-  
+  .responsibility1{
+    font-size: .87em;
+  }
