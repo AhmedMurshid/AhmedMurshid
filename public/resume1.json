@@ -110,7 +110,12 @@
       "company": "UPS",
       "position": "Oracle Database Design Intern",
       "duration": "May 2023 - Present",
-      "location": "Louisville, Kentucky, United States - Hybrid"
+      "location": "Louisville, Kentucky, United States (Hybrid)",
+      "responsibilities": [
+        "Collaborated on Oracle database design projects.",
+        "Assisted in the development and maintenance of database systems.",
+        "Contributed to data analysis and optimization efforts."
+      ]
     },
     {
       "company": "J.B. Speed School of Technology",
@@ -118,17 +123,19 @@
       "duration": "October 2022 - May 2023",
       "location": "Louisville, KY",
       "responsibilities": [
-        "Provided technical support and assistance.",
-        "Assisted with troubleshooting and resolving issues."
+        "Provided comprehensive technical support to faculty and students.",
+        "Diagnosed and resolved hardware and software issues."
       ]
     },
     {
       "company": "UofL Health",
       "position": "Patient Access Registrar",
       "duration": "February 2022 - October 2022",
+      "location": "Louisville, KY",
       "responsibilities": [
-        "Worked on computers entering confidential information to register patients.",
-        "Communicated with patients and solved various patient situations."
+        "Entered confidential patient information into computer systems for registration.",
+        "Effectively communicated with patients and addressed various patient-related inquiries and concerns.",
+        "Ensured the accuracy and integrity of patient records."
       ]
     },
     {
@@ -137,12 +144,13 @@
       "duration": "May 2020 - August 2020",
       "location": "Louisville, KY",
       "responsibilities": [
-        "Discussed community future with leaders.",
-        "Gained knowledge in civic engagement.",
-        "Worked with small businesses to help community thrive."
+        "Engaged in meaningful discussions with community leaders to shape the future of our community.",
+        "Gained valuable insights into civic engagement and community development.",
+        "Collaborated with local small businesses to enhance community well-being and vitality."
       ]
     }
   ],
+
   "activities_honors": {
     "hobbies": [
       "Chess",
