@@ -76,7 +76,7 @@ for (let i = 0; i < categories.length; i++) {
         for (let i = 0; i < 3 && i < data.applied_experience.projects.length; i++) {
             const project = data.applied_experience.projects[i];
             const projectItem = document.createElement("div");
-            projectItem.innerHTML = `<h3>${project.language} Project</h3><p class="p-re">${project.description}</p>`;
+            projectItem.innerHTML = `<h3>${project.language} Project</h3><h5>${project.title}</h5><p class="p-re">${project.description}</p>`;
             appliedExperienceList.appendChild(projectItem);
         }
 

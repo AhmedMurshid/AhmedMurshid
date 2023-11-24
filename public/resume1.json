@@ -52,10 +52,12 @@
       },      
       {
         "language": "C/C++",
+        "title": "Tic Tac Toe",
         "description": "Developed a simple 3D connect tic-tac-toe game with a state using C programming."
       },
       {
         "language": "JavaScript",
+        "title": "My site Portfolio",
         "description": "Responsive React portfolio showcasing skills, projects, and experiences effectively."
       },
       {
