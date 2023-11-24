@@ -47,15 +47,17 @@
       {
         "language": "Python",
         "title": "Interactive Health Data Visualization",
-        "description": "Designed and developed an interactive user interface to visualize digital health data. Utilized various visualization techniques and visual analysis tools to discover interesting information and patterns within the data, promoting data-driven insights and informed decision-making.",
-        "link": "https://example.com/your-project"
+        "description": "Created an interactive interface for exploring and analyzing digital health data, extracting valuable insights through visualizations.",
+        "link": "https://github.com/abpoth/CSE_350-550-Group-4-Project"
       },      
       {
         "language": "C/C++",
+        "title": "Tic Tac Toe",
         "description": "Developed a simple 3D connect tic-tac-toe game with a state using C programming."
       },
       {
         "language": "JavaScript",
+        "title": "My site Portfolio",
         "description": "Responsive React portfolio showcasing skills, projects, and experiences effectively."
       },
       {
@@ -80,7 +82,7 @@
     {
       "language": "Python",
       "title": "Interactive Health Data Visualization",
-      "description": "Designed and developed an interactive user interface to visualize digital health data. Utilized various visualization techniques and visual analysis tools to discover interesting information and patterns within the data, promoting data-driven insights and informed decision-making.",
+      "description": "Created an interactive interface for exploring and analyzing digital health data, extracting valuable insights through visualizations.",
       "link": "https://github.com/abpoth/CSE_350-550-Group-4-Project"
       },   
     {
