@@ -68,7 +68,9 @@ footer {
 }
 
 /* Style the contact-info section */
-
+h5{
+    margin: -0.5em 0em;
+}
 .objective{
     width: 100%;
 }
