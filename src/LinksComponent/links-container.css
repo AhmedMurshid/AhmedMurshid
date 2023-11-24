@@ -5,8 +5,9 @@
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  width: 90%;
+  width: 56ex;
   height: auto;
+  margin-top: 1.5ex;
   overflow: hidden;
 }
 
@@ -14,8 +15,6 @@
 .links-container::after {
   content: '';
   position: absolute;
-  width: 150px;
-  height: 150px;
   background:var(--container-color);
   opacity: 0.2;
 }

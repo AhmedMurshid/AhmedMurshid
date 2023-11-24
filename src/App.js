@@ -21,6 +21,7 @@ const App = () => {
   const myLinks = [
     { title: 'LinkedIn', url: 'https://www.linkedin.com/in/ahmed001a/' },
     { title: 'GitHub', url: 'https://github.com/AhmedMurshid' },
+    { title: 'My Site', url: 'https://ahmedmurshid.github.io/my-site/'},
     // ... other links
   ];
 
