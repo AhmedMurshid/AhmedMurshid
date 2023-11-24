@@ -9,6 +9,7 @@ import Resume from './ResumeComponent/Resume';
 import resumeData from './resume.json';
 import './App.css';
 import './base.css';
+import './responsive.css'
 import ImageContainer from './ImagesComponent/ImageContainer';
 
 
@@ -51,26 +52,24 @@ const App = () => {
             altText="A sample image"/>
         </div>
         <div className='group-of-blocks'>
-
           <div className="Blocks">
             <WorkExperienceContainer workExperiences={resumeData.work_experience} />
-            
           </div>
 
           <div className="Blocks">
             <ProjectContainer workExperiences1={resumeData.work_experience1} /> 
           </div>
 
-          <div className="Blocks">
-              <ContactContainer contactInfo={resumeData.contact} />
-          </div>
-          
           <div className='Blocks'>
             <LinksContainer links={myLinks} />
           </div>
-        
-    
-      </div>
+
+          <div className="Blocks">
+            <ContactContainer contactInfo={resumeData.contact} />
+          </div>
+        </div>
+
+
       </div>
   
       

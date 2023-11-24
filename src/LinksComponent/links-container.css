@@ -5,7 +5,7 @@
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  width: auto;
+  width: 90%;
   height: auto;
   overflow: hidden;
 }
@@ -46,12 +46,10 @@
 .links-ul-container {
   list-style-type: none;
   padding: 0;
-  margin: 0;
 }
 
 .links-container .link-ul-container li {
   list-style-type: none;
-  margin: 1%;
   margin-left: 0;
   transition: transform 0.2s;
 }
@@ -71,6 +69,8 @@
 }
 
 .links-container li a:hover {
-  color: var(--text-color);
+  color: wheat;
   transform: translateY(-2px);
+  background-color: #005599;
+  border-radius: 10%;
 }

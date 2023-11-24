@@ -3,6 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
     <title>My resume page</title>
 </head>
 
@@ -22,32 +24,70 @@
         document.querySelector(".objective").textContent = data.objective;
         document.querySelector(".when").textContent = data.when;
 
-        const technicalSkillsList = document.querySelector(".technical-skills-list");
-        for (const category in data.technical_skills) {
-            const categorySkills = data.technical_skills[category];
-            const categoryList = document.createElement("div");
-            for (const skill of categorySkills) {
-                const skillItem = document.createElement("div");
-                skillItem.textContent = skill;
-                categoryList.appendChild(skillItem);
-            }
-            const categoryItem = document.createElement("div");
-            categoryItem.textContent = category;
-            categoryItem.appendChild(categoryList);
-            technicalSkillsList.appendChild(categoryItem);
-        }
+        const technicalSkillsTable = document.querySelector(".technical-skills-table");
+const tableHead = technicalSkillsTable.querySelector("thead tr");
+const tableBody = technicalSkillsTable.querySelector("tbody");
+
+const categories = [
+  "Software and Tools",
+  "Programming Languages",
+  "Database Management"
+];
+
+// Create the table structure
+for (const category of categories) {
+  // Create a th element for each category as a table header
+  const categoryHeadingCell = document.createElement("th");
+  categoryHeadingCell.textContent = category;
+  // tableHead.appendChild(categoryHeadingCell);
+}
+
+for (let i = 0; i < categories.length; i++) {
+  const category = categories[i];
+  const categorySkills = data.technical_skills[category];
+
+  for (const skill of categorySkills) {
+    // Create a new row for each skill
+    let skillRow = tableBody.querySelector(`tr:nth-child(${i + 1})`);
+
+    if (!skillRow) {
+      skillRow = document.createElement("tr");
+      tableBody.appendChild(skillRow);
+    }
+
+    // Create a td element for each skill within the appropriate category
+    const skillCell = document.createElement("td");
+    skillCell.textContent = skill;
+
+    // Add the CSS class to apply rounded corners
+    skillCell.classList.add("rounded-cell");
+
+    skillRow.appendChild(skillCell);
+  }
+}
+
+
+
+
 
         const appliedExperienceList = document.querySelector(".applied-experience-list");
-        for (const project of data.applied_experience.projects) {
+
+        // Use a loop that iterates over the first three items
+        for (let i = 0; i < 3 && i < data.applied_experience.projects.length; i++) {
+            const project = data.applied_experience.projects[i];
             const projectItem = document.createElement("div");
             projectItem.innerHTML = `<h3>${project.language} Project</h3><p class="p-re">${project.description}</p>`;
             appliedExperienceList.appendChild(projectItem);
         }
 
         const workExperienceList = document.querySelector(".work-experience-list");
-        for (const job of data.work_experience) {
+
+        // Use a loop that iterates over the first two items
+        for (let i = 0; i < 2 && i < data.work_experience.length; i++) {
+            const job = data.work_experience[i];
             const jobItem = document.createElement("div");
             jobItem.innerHTML = `<h3>${job.position} - ${job.company}</h3><p class="p-re">${job.duration}</p><p class="p-re">${job.location}</p>`;
+            
             if (job.responsibilities) {
                 const responsibilitiesList = document.createElement("div");
                 for (const responsibility of job.responsibilities) {
@@ -57,8 +97,10 @@
                 }
                 jobItem.appendChild(responsibilitiesList);
             }
+            
             workExperienceList.appendChild(jobItem);
         }
+
 
         const activitiesHobbiesList = document.querySelector(".activities-hobbies-list");
         for (const hobby of data.activities_honors.hobbies) {
@@ -87,41 +129,66 @@
 
 <div class="resume-content1">
   <h1 class="name">{name}</h1>
-  <div class='contact-info'>
-    <h2 class='h2-re'>Contact</h2>
-    <p class='p-re email'>Email: {contact.email}</p>
-    <p class='p-re phone'>Phone: {contact.phone}</p>
-    <p class='p-re location'>Location: {contact.location}</p>
-  </div>
+  <section></section>
+  
   <div class='goal-education'>
-    <h2 class='h2-re'>Education</h2>
-    <p class='p-re degree'>{education.degree}</p>
-    <p class='p-re school'>{education.school}</p>
-    <p class='p-re anticipated-graduation'>Anticipated Graduation: {education.anticipated_graduation}</p>
-    <p class='p-re gpa'>GPA: {education.gpa}</p>
+    <section>
+      <h2 class='h2-re'>Education</h2>
+      <p class='p-re degree'>{education.degree}</p>
+      <p class='p-re school'>{education.school}</p>
+      <p class='p-re anticipated-graduation'>Anticipated Graduation: {education.anticipated_graduation}</p>
+      <p class='p-re gpa'>GPA: {education.gpa}</p>
+    </section>
+    <section class='contact-info'>
+      <h2 class='h2-re'>Contact</h2>
+      <p class='p-re email'>Email: {contact.email}</p>
+      <p class='p-re phone'>Phone: {contact.phone}</p>
+      <p class='p-re location'>Location: {contact.location}</p>
+    </section>
+  </div>
+  <div class='goal'>
+    <section>
     <h2 class='h2-re'>Objective</h2>
     <p class='p-re objective'>{objective}</p>
+    </section>
+    <section>
     <h2 class='h2-re'>When</h2>
     <p class='p-re when'>{when}</p>
+    </section>
   </div>
+  <section class="mid-part">
   <div class='skills'>
     <h2 class='h2-re'>Technical Skills</h2>
-    <div class='technical-skills-list'>
-      <!-- The JavaScript code will populate technical skills here. -->
-    </div>
+    <table class="technical-skills-table">
+      <thead>
+        <tr>
+          <!-- Category headings will be inserted here -->
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Skill rows, including a <th> in one of the rows -->
+      </tbody>
+    </table>
+    
+    
   </div>
+  <section class="pro-work">
   <div class='projects-re'>
     <h2 class='h2-re'>Applied Experience</h2>
     <div class='applied-experience-list'>
       <!-- The JavaScript code will populate applied experience projects here. -->
     </div>
   </div>
+  
   <div class='work-exp'>
     <h2 class='h2-re'>Work Experience</h2>
     <div class='work-experience-list'>
       <!-- The JavaScript code will populate work experience here. -->
     </div>
   </div>
+  </section>
+</section>
+  <section class="low-part">
   <div class='acti'>   
     <h2 class='h2-re'>Activities & Honors</h2>
     <div class='activities-hobbies-list'>
@@ -137,6 +204,7 @@
       <!-- The JavaScript code will populate programs and volunteer work here. -->
     </div>
   </div>
+</section>
 </div>
 
 </body>

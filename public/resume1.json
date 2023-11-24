@@ -6,40 +6,36 @@
     "location": "Louisville, KY"
   },
   "objective": "To secure a challenging data engineering position in a dynamic organization that utilizes my technical skills and knowledge in computer science to develop innovative solutions and gain practical experience in the industry.",
-  "when": "Summer 2023",
+  "when": "Summer 2024",
   "education": {
     "degree": "Bachelor of Art in Computer Science",
     "school": "J.B. Speed School of Engineering, University of Louisville",
     "anticipated_graduation": "December 2024",
-    "gpa": 3.36
+    "gpa": 3.38
   },
   
   "technical_skills": {
     "Software and Tools": [
+      "Docker",
       "Excel",
       "PowerPoint",
       "VS Code",
       "Notepad++",
       "GitHub"
     ],
-    "Web Development": [
+    "Programming Languages": [
       "HTML",
       "CSS",
-      "JS"
-    ],
-    "Programming Languages": [
+      "JS",
       "Java Programming",
       "Python Programming",
-      "C#",
-      "PL/SQL"
+      "C#"
     ],
     "Database Management": [
       "MySQL",
+      "PL/SQL",
       "Databases",
       "Oracle Database",
-      "Data Storage Technologies"
-    ],
-    "Data Handling and Analysis": [
       "Data Visualization",
       "Data Analysis"
     ]
@@ -56,6 +52,10 @@
       {
         "language": "C/C++",
         "description": "Developed a simple 3D connect tic-tac-toe game with a state using C programming."
+      },
+      {
+        "language": "JavaScript",
+        "description": "Responsive React portfolio showcasing skills, projects, and experiences effectively."
       },
       {
         "language": "JAVA",
@@ -86,9 +86,13 @@
       "description": "Developed a simple 3D connect tic-tac-toe game with a state using C programming."
     },
     {
+      "language": "JavaScript",
+      "description": "Responsive React portfolio showcasing skills, projects, and experiences effectively."
+    },  
+    {
       "language": "JAVA",
       "description": "Utilized object-oriented programming and JavaFX to create a compact simulation that changes colors with the click of a button. Implemented smooth animations and interactive functionality."
-    },
+    },  
     {
       "language": "Python",
       "description": "Graphical interface for a grade calculator that gives you your weighted grade.",
@@ -136,11 +140,9 @@
   ],
   "activities_honors": {
     "hobbies": [
-      "Developing Websites",
       "Chess",
       "Soccer",
-      "HomeLab Ubuntu Server",
-      "Working in a Linux and Windows environment"
+      "HomeLab Ubuntu Server"
     ],
     "honors": [
       "Dean Scholar",
