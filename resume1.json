@@ -46,9 +46,10 @@
     "projects": [
       {
         "language": "Python",
-        "description": "Collaborated on software development project and applied SRS document to define and prioritize project requirements.",
-        "branch": "abpoth/CSE_350-550-Group-4-Project"
-      },
+        "title": "Interactive Health Data Visualization",
+        "description": "Designed and developed an interactive user interface to visualize digital health data. Utilized various visualization techniques and visual analysis tools to discover interesting information and patterns within the data, promoting data-driven insights and informed decision-making.",
+        "link": "https://example.com/your-project"
+      },      
       {
         "language": "C/C++",
         "description": "Developed a simple 3D connect tic-tac-toe game with a state using C programming."
