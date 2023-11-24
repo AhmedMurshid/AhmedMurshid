@@ -50,12 +50,19 @@
     "projects": [
       {
         "language": "Python",
-        "description": "Collaborated on software development project and applied SRS document to define and prioritize project requirements.",
-        "branch": "abpoth/CSE_350-550-Group-4-Project"
-      },
+        "title": "Interactive Health Data Visualization",
+        "description": "Created an interactive interface for exploring and analyzing digital health data, extracting valuable insights through visualizations.",
+        "link": "https://github.com/abpoth/CSE_350-550-Group-4-Project"
+      },      
       {
         "language": "C/C++",
+        "title": "Tic Tac Toe",
         "description": "Developed a simple 3D connect tic-tac-toe game with a state using C programming."
+      },
+      {
+        "language": "JavaScript",
+        "title": "My site Portfolio",
+        "description": "Responsive React portfolio showcasing skills, projects, and experiences effectively."
       },
       {
         "language": "JAVA",
@@ -78,12 +85,19 @@
   "work_experience1": [
     {
       "language": "Python",
-      "description": "Collaborated on software development project and applied SRS document to define and prioritize project requirements.",
-      "branch": "abpoth/CSE_350-550-Group-4-Project"
-    },
+      "title": "Interactive Health Data Visualization",
+      "description": "Created an interactive interface for exploring and analyzing digital health data, extracting valuable insights through visualizations.",
+      "link": "https://github.com/abpoth/CSE_350-550-Group-4-Project"
+    },      
     {
       "language": "C/C++",
+      "title": "Tic Tac Toe",
       "description": "Developed a simple 3D connect tic-tac-toe game with a state using C programming."
+    },
+    {
+      "language": "JavaScript",
+      "title": "My site Portfolio",
+      "description": "Responsive React portfolio showcasing skills, projects, and experiences effectively."
     },
     {
       "language": "JAVA",
