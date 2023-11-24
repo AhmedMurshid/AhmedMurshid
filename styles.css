@@ -1,0 +1,212 @@
+/* Reset some default styles */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(65, 64, 64);
+    
+}
+
+
+
+
+.p-re {
+    font-size: 0.9em;
+    margin: 5px 0;
+}
+
+/* Style lists */
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    font-size: 16px;
+    margin-left: 20px;
+    position: relative;
+}
+
+ul li::before {
+    content: "\2022"; /* Bullet point character */
+    position: absolute;
+    left: -20px;
+}
+
+/* Style the header */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+/* Style the footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.resume-content1 {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+    page-break-inside: avoid; 
+    background-color: white;
+    box-shadow: 0px 0px 30px rgb(0, 0, 0);
+
+    font-size: 0.95em;
+
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+    grid-gap: 2px; /* Adjust the gap between columns as needed */
+}
+
+/* Style the contact-info section */
+.contact-info {
+}
+.objective{
+    width: 100%;
+}
+
+/* Style the goal-education section */
+.goal-education {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 9em; 
+
+}
+.goal{
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* This will make the left column twice as wide as the right */
+    grid-gap: 1em; 
+}
+
+/* Style the skills section */
+/* .skills {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1em; 
+} */
+.pro-work{
+    display: grid;
+    grid-template-columns: 1.3fr 1fr; 
+    grid-gap: 5px; 
+}
+
+.low-part{
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 5px; 
+}
+
+
+
+@media print {
+    .name {
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        background-color:cadetblue;
+    }
+    .resume-content1 {
+        margin: 0;
+        padding: 0;
+    }
+    .resume-content1 {
+     
+        box-shadow: 0px 0px 0px rgb(0, 0, 0);
+    }
+
+}
+
+
+/* Base styling for the entire resume content */
+.resume-content1 {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* This is a clean, professional font choice */
+    color: #444; /* Slightly softer than black for better readability */
+    line-height: 1.6; /* Improves readability by increasing the space between lines */
+  }
+  
+  /* Styling for the name */
+  .name {
+    font-size: 2em; 
+    font-weight: bold; 
+    text-align: center; 
+    margin: 0.2em 0; 
+    background-color: steelblue;
+  }
+  
+  /* Section titles */
+  .h2-re {
+    font-size: 1.5em; /* Slightly larger than normal text for headings */
+    font-weight: 600; /* Semi-bold for clear section titles */
+    color: #333; /* Darker color for emphasis */
+  }
+  
+  .h2-re {
+    margin: -0.1em 0;
+    border-bottom: 2px solid red;
+  }
+  
+  
+  /* Paragraph text styling */
+  .p-re {
+    font-size: .9em; /* Standard font size for readability */
+    margin: -0.2em 0; /* Adds spacing between lines without creating huge gaps */
+  }
+  
+  /* Specific styling for contact info to make it less prominent */
+  .contact-info .p-re {
+    font-weight: normal; /* Regular font weight for contact information */
+    color: #666; /* Lighter color for less emphasis */
+    font-size: 0.9em; /* Slightly smaller font size for contact details */
+  }
+  
+  /* If you would like to highlight the GPA and important details */
+  .p-re.gpa,
+  .p-re.degree,
+  .p-re.anticipated-graduation {
+    font-weight: bold; /* Makes certain educational details stand out */
+  }
+  
+  /* You may also want to add some styling for lists if you have any */
+  ul {
+    padding-left: 20px;
+  }
+  
+  ul li {
+    list-style-type: disc; /* Adds a bullet point to each list item */
+  }
+  
+  .technical-skills-table {
+    border-collapse: collapse; /* Collapse table borders */
+    width: 100%;
+  }
+  
+  .technical-skills-table th {
+    padding: 0.2em 1em; /* Adjust padding for table headings */
+    background-color: #f0f0f0; /* Add background color for headings */
+  }
+  
+  .technical-skills-table td {
+    padding: 0.2em 1em; /* Adjust padding for table cells */
+    border: 1px solid #ccc; /* Add borders to cells */
+  }
+  
+  .technical-skills-table ul {
+    margin: 0; /* Remove margin for unordered lists */
+    padding-left: 1em; /* Add left padding for the unordered lists */
+  }
+  
+  .rounded-cell {
+    border-radius: 10px; /* You can adjust the radius as needed */
+  }
+  
