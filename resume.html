@@ -17,6 +17,7 @@
         document.querySelector(".email").textContent = `Email: ${data.contact.email}`;
         document.querySelector(".phone").textContent = `Phone: ${data.contact.phone}`;
         document.querySelector(".location").textContent = `Location: ${data.contact.location}`;
+        document.querySelector(".website").textContent = `Website: ${data.contact.website}`;
         document.querySelector(".degree").textContent = data.education.degree;
         document.querySelector(".school").textContent = data.education.school;
         document.querySelector(".anticipated-graduation").textContent = `Anticipated Graduation: ${data.education.anticipated_graduation}`;
@@ -144,6 +145,7 @@ for (let i = 0; i < categories.length; i++) {
       <p class='p-re email'>Email: {contact.email}</p>
       <p class='p-re phone'>Phone: {contact.phone}</p>
       <p class='p-re location'>Location: {contact.location}</p>
+      <p class='p-re website'>Website: <a href={contact.website}>{contact.website}</a></p>
     </section>
   </div>
   <div class='goal'>
