@@ -34,5 +34,6 @@ body, html {
   margin: -3px; /* Remove default margin */
   overflow-x: hidden; /* Prevent horizontal scroll */
   overflow-y: hidden;
+  
   background-color: black;
 }

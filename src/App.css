@@ -73,3 +73,48 @@ h1,h2,h3,h4,h5,h6{
   margin-top: 40%;
 }
 
+
+@media screen and (max-width: 768px) {
+  body, html {
+   
+    overflow-y:scroll; /* Prevent horizontal scroll */
+    
+  }
+  
+  .container {
+    text-align: center;
+    margin: 0 auto; 
+    display: grid;
+    grid-template-columns: 1fr; 
+}
+
+.Blocks{
+    width: 100%; 
+}
+
+.Blocks3 {
+    position: relative; 
+    left: -4em;
+    width: auto;
+    margin: 0 auto; 
+    margin-bottom: 1em; 
+}
+
+.group-of-blocks {
+    position: relative;
+    top: 2em;
+    left: 2em;
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto; 
+
+}
+  .Blocks, .Blocks3 {
+    position: relative;
+    width: 100%; 
+  }
+
+
+}
+

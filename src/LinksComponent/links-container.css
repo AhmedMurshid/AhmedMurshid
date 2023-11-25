@@ -5,7 +5,7 @@
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  width: 56ex;
+  width: 30em;
   height: auto;
   margin-top: 1.5ex;
   overflow: hidden;
@@ -72,4 +72,13 @@
   transform: translateY(-2px);
   background-color: #005599;
   border-radius: 10%;
+}
+@media screen and (max-width: 768px) {
+  .links-container {
+ 
+    width: 20em;
+
+
+  }
+  
 }
