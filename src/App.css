@@ -94,9 +94,9 @@ h1,h2,h3,h4,h5,h6{
 
 .Blocks3 {
     position: relative; 
-    left: -4em;
+    left: auto;
     width: auto;
-    margin: 0 auto; 
+    margin: auto; 
     margin-bottom: 1em; 
 }
 

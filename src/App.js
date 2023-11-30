@@ -12,11 +12,17 @@ import './base.css';
 import './responsive.css'
 import ImageContainer from './ImagesComponent/ImageContainer';
 
+import Achievements from './Achievements';
+
+
 
 
 
 const App = () => {
-
+  const achievementsData = [
+    ...resumeData.activities_honors.honors,
+    // ...resumeData.activities_honors.hobbies,
+  ];
 
   const myLinks = [
     { title: 'LinkedIn', url: 'https://www.linkedin.com/in/ahmed001a/' },
@@ -47,10 +53,13 @@ const App = () => {
       </div>
     </div>
     <div className='container'>
+    <Achievements achievementsData={achievementsData} />
+
         <div className='Blocks3'>
             <ImageContainer
             imageUrl={require("./image1.png")}
             altText="A sample image"/>
+            
         </div>
         <div className='group-of-blocks'>
           <div className="Blocks">
