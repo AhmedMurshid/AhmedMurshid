@@ -53,8 +53,8 @@
       },      
       {
         "language": "C/C++",
-        "title": "Tic Tac Toe",
-        "description": "Developed a simple 3D connect tic-tac-toe game with a state using C programming."
+        "title": "3-D triple-decker tic-tac-toe",
+        "description": "I designed and developed a 3-D triple-decker tic-tac-toe game with three stacked boards"
       },
       {
         "language": "JavaScript",
@@ -153,13 +153,12 @@
 
   "activities_honors": {
     "hobbies": [
-      "Chess",
-      "Soccer",
       "HomeLab Ubuntu Server"
     ],
     "honors": [
       "Dean Scholar",
-      "UofL Dean List - 2020, 2022, 2023"
+      "UofL Dean List - 2020, 2022, 2023",
+      "Hackathon - Cardinal Impact Weekend - 2023 1st place"
     ]
   },
   "programs_and_volunteer": [

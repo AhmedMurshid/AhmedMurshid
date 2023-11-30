@@ -206,3 +206,11 @@ h5{
   .responsibility1{
     font-size: .87em;
   }
+  @media screen and (max-width: 768px) {
+    body, html {
+     
+      background-color: white;
+
+      
+    }
+}
