@@ -1,5 +1,5 @@
 import React from 'react';
-import './work-experience-container.css';
+import './common-container.css';
 
 const WorkExperienceContainer = ({ workExperiences }) => {
   const limitedWorkExperiences = workExperiences.slice(0, 2); // Adjust 3 to your desired limit

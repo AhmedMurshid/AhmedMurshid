@@ -1,9 +1,9 @@
 import React from 'react';
 
 import WorkExperienceContainer from './WorkExperienceComponent/WorkExperienceContainer';
-import ContactContainer from './ContactComponent/ContactContainer';
+import ContactContainer from './LinksComponent/ContactContainer';
 import LinksContainer from './LinksComponent/LinksContainer';
-import ProjectContainer from './ProjectComponent/ProjectsContainer';
+import ProjectContainer from './WorkExperienceComponent/ProjectsContainer';
 import Resume from './ResumeComponent/Resume'; 
 
 import resumeData from './resume.json';

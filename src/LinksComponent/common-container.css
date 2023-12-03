@@ -1,21 +1,26 @@
-
-.links-container {
+/* Common container properties */
+.common-container {
   background: var(--bg-container-color);
   border: 2px solid #333;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  width: 30em;
   height: auto;
-  margin-top: 1.5ex;
   overflow: hidden;
 }
 
+/* Unique properties for links container */
+.links-container {
+  padding: 20px;
+  width: 30em;
+  margin-top: 1.5ex;
+}
+
 .links-container::before,
-.links-container::after {
+.links-container::after,
+.contact-container::before {
   content: '';
   position: absolute;
-  background:var(--container-color);
+  background: var(--container-color);
   opacity: 0.2;
 }
 
@@ -31,17 +36,33 @@
   clip-path: polygon(50% 100%, 0 0, 100% 0);
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+/* Unique properties for contact container */
+.contact-container {
+  width: 100%;
+}
 
-.links-container h2,
-.links-container ul,
-.links-container li,
-.links-container li a {
+.contact-container::after {
+  content: '';
+  width: auto;
+  height: 100px;
+  background: var(--container-color);
+  clip-path: circle(50%);
+  opacity: 0.2;
+}
+
+/* Shared text styles */
+.common-container h2,
+.common-container ul,
+.common-container li,
+.common-container li a,
+.contact-container h2,
+.contact-container p {
   font-family: 'Roboto', sans-serif;
   text-shadow: none;
   color: var(--text-color);
 }
 
+/* Unique list styles for links container */
 .links-ul-container {
   list-style-type: none;
   padding: 0;
@@ -73,12 +94,13 @@
   background-color: #005599;
   border-radius: 10%;
 }
+
+/* Media queries */
 @media screen and (max-width: 768px) {
-  .links-container {
- 
-    width: 20em;
-
-
+  .links-container,
+  .project-container,
+  .work-experience-container,
+  .contact-container {
+    width: auto; /* Adjusted to be responsive */
   }
-  
 }

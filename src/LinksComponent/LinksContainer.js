@@ -1,10 +1,9 @@
-// LinksContainer.js
 import React from 'react';
-import './links-container.css';
+import './common-container.css';
 
 const LinksContainer = ({ links }) => {
   return (
-    <div className="links-container">
+    <div className="links-container common-container">
       <h2>My Links</h2>
       <ul className='link-ul-container'>
         {links.map((link, index) => (
