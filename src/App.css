@@ -88,7 +88,7 @@ h1,h2,h3,h4,h5,h6{
 
 .Blocks3 {
     position: relative; 
-    left: 5ex;
+    left: aut\;
     width: auto;
     margin: auto; 
     margin-bottom: 1em; 
@@ -97,7 +97,7 @@ h1,h2,h3,h4,h5,h6{
 .group-of-blocks {
     position: relative;
     top: 2em;
-    left: 12ex;
+    left: 5ex;
     width: auto;
     display: grid;
     grid-template-columns: 1fr;
