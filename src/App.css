@@ -1,5 +1,6 @@
 .App{
   padding: 1%;
+  color: var(--text-color);
 }
 h1,h2,h3,h4,h5,h6{
   color: var(--text-color);
@@ -23,16 +24,13 @@ h1,h2,h3,h4,h5,h6{
   top: -40%;
   display: flex;
 
-
 }
 
 .group-of-blocks .Blocks {
-  width: 30%; 
-  margin-right: 1em; 
+  width: auto; 
+  left: 10%;
 }
-.group-of-blocks .item:last-child {
-  margin-right: -10%;
-}
+
 
 .Blocks3{
   width: auto;
@@ -48,38 +46,37 @@ h1,h2,h3,h4,h5,h6{
 
 }
 
-.Blocks {
-  flex: 1;
+
+.group-of-blocks .Blocks:nth-child(1) {
+  padding: 1px;
+  margin: 1px;
 }
-.group-of-blocks .Blocks:nth-child(1),
+/* projects */
 .group-of-blocks .Blocks:nth-child(2) {
-  display: grid;
-  grid-template-columns: 1fr 1fr; 
-  grid-gap: 1px; 
-
-  width: 140%;
+  padding: 1px;
+  margin: 1px;
 }
-
-.group-of-blocks .Blocks:nth-child(4),
-.group-of-blocks .Blocks:nth-child(5) {
-  display: grid;
-  grid-template-columns: 1fr 1fr; 
-  grid-gap: 1px; 
-
-  width: 130%;
+/* links */
+.group-of-blocks .Blocks:nth-child(3) {
+  padding: 0 5ex;
 }
-
-.group-of-blocks .Blocks:nth-child(5){
-  margin-top: 40%;
+/* contact */
+.group-of-blocks .Blocks:nth-child(4){
+  padding: 0 5ex;
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 990px) {
   body, html {
    
     overflow-y:scroll; /* Prevent horizontal scroll */
     
   }
+  html, body {
+    height: 100%;
+    margin: 0;
+}
+
   
   .container {
     text-align: center;
@@ -88,13 +85,10 @@ h1,h2,h3,h4,h5,h6{
     grid-template-columns: 1fr; 
 }
 
-.Blocks{
-    width: 100%; 
-}
 
 .Blocks3 {
     position: relative; 
-    left: auto;
+    left: 5ex;
     width: auto;
     margin: auto; 
     margin-bottom: 1em; 
@@ -103,18 +97,14 @@ h1,h2,h3,h4,h5,h6{
 .group-of-blocks {
     position: relative;
     top: 2em;
-    left: 2em;
+    left: 12ex;
     width: auto;
     display: grid;
     grid-template-columns: 1fr;
     margin: 0 auto; 
 
 }
-  .Blocks, .Blocks3 {
-    position: relative;
-    width: 100%; 
-  }
-
+  
 
 }
 

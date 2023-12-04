@@ -7,6 +7,7 @@
     padding: 2px;
     width: auto;
     height: auto;
+    color: var(--text-color);
   }
   
   /* Shared text styles */
@@ -45,10 +46,7 @@
   }
   
   /* Unique properties for work experience container */
-  .work-experience-container {
-    /* unique properties if any */
-  }
-  
+
   .work-experience {
     background: var(--container-color);
     border: 1px solid #333;
@@ -56,7 +54,7 @@
     padding: 2%;
     margin: 3%;
     margin-bottom: 7%;
-    width: 90%;
+    width: auto;
     position: relative;
   }
   
@@ -72,7 +70,7 @@
   
   /* Unique properties for project container */
   .project-container {
-    width: 90%;
+    width: auto;
     margin-bottom: 4%;
   }
   
@@ -82,7 +80,7 @@
     border-radius: 10px;
     padding: 2%;
     margin: 2% auto;
-    width: 90%;
+    width: auto;
     position: relative;
   }
   
@@ -96,10 +94,4 @@
     opacity: 0.2;
   }
   
-  /* Media queries */
-  @media screen and (max-width: 768px) {
-    .common-project-work-container {
-      width: 22em; /* Adjusted to be responsive for both containers */
-    }
-  }
-  
+ 

@@ -33,7 +33,7 @@ body, html {
   height: 100%; /* Ensure that the body takes up the full height of the viewport */
   margin: -3px; /* Remove default margin */
   overflow-x: hidden; /* Prevent horizontal scroll */
-  overflow-y: hidden;
+  overflow-y: auto;
   
   background-color: black;
 }
