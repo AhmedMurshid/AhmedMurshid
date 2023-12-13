@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import DisplayComponets from './DisplayScreen/DisplayComponets';
 
 function App() {
+  const [displayAboutMe, setDisplayAboutMe] = useState(false);
+  const [displayProjects, setDisplayProjects] = useState(false); // State for the Projects component
+
+  const toggleAboutMe = () => {
+    setDisplayAboutMe(!displayAboutMe);
+    setDisplayProjects(false); 
+  };
+
+  const toggleProjects = () => {
+    setDisplayProjects(!displayProjects);
+    setDisplayAboutMe(false); 
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App"> 
+      <button onClick={toggleAboutMe}>About Me</button>
+      <button onClick={toggleProjects}>Projects</button>
+      <DisplayComponets showAboutMe={displayAboutMe} showProjects={displayProjects} />
     </div>
   );
 }
