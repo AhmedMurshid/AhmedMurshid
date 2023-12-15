@@ -1,14 +1,17 @@
 import React from 'react';
 import AboutMe from '../nav/Aboutme';
-import Projects from '../nav/Projects'; // Import the new component
+import Projects from '../nav/Projects'; 
+import Skills from '../nav/Skills';
+import './Display.css'
 
-function DisplayComponets({ showAboutMe, showProjects }) {
+function DisplayComponets({ showAboutMe, showProjects, showSkills }) {
   return (
-    <div>
-      <h1>Display Component</h1>
-      <p>This is the Display Component content.</p>
+    <div className='MainDiv'>
+      <h1>Ahmed M Abdullahi</h1>
+      <p></p>
       {showAboutMe && <AboutMe />}
-      {showProjects && <Projects />} {/* Conditionally render the Projects component */}
+      {showProjects && <Projects />}
+      {showSkills && <Skills />}
     </div>
   );
 }
