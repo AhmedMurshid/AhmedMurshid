@@ -47,13 +47,19 @@
         "language": "Python",
         "title": "Interactive Health Data Visualization",
         "description": "Created an interactive interface for exploring and analyzing digital health data, extracting valuable insights through visualizations.",
-        "link": "https://github.com/abpoth/CSE_350-550-Group-4-Project"
-        },   
+        "link": "https://github.com/GobinB/DataVis_Term_Project/tree/updated_branch"
+        },
+        {
+          "language": "SQLite & Java",
+          "title": "Meal Rater App",
+          "description": "An Android application developed in Java, using SQL for database interactions. It allows users to rate meals from different restaurants. The main features include adding restaurant and dish names, rating them, and viewing aggregated ratings.",
+          "link": "https://github.com/AhmedMurshid/MealRater"
+      },         
       {
         "language": "C/C++",
         "title": "Tic Tac Toe Game",
         "description": "Developed a simple 3D connect tic-tac-toe game with a state using C programming.",
-        "link": "here"
+        "link": ""
       },
       {
         "language": "JavaScript",
@@ -70,7 +76,7 @@
         "language": "Python",
         "title": "GPA Calculator",
         "description": "Graphical interface for a grade calculator that gives you your weighted grade.",
-        "link": ""
+        "link": "https://github.com/AhmedMurshid/GradeCalculator"
       }
     ],
     

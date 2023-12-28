@@ -3,6 +3,7 @@ import DisplayComponets from './DisplayScreen/DisplayComponets';
 import './App.css';
 
 
+
 import MyPDF from './files/my-resume.pdf';
 
 
@@ -11,7 +12,6 @@ function App() {
   const [displayProjects, setDisplayProjects] = useState(false);
   const [displaySkills, setDisplaySkills] = useState(false);
 
-    // Function to open PDF
     const handleOpenPDF = () => {
       window.open(MyPDF);
     };
@@ -42,7 +42,7 @@ function App() {
         <button onClick={toggleSkills} className='button-group'>Skills</button>
       </div>
       <div className='resume-button'>
-      <button onClick={handleOpenPDF} className='button-group'>Open PDF</button>
+      <button onClick={handleOpenPDF} className='button-group'>Print Resume</button>
       </div>
       <DisplayComponets
         showAboutMe={displayAboutMe}
