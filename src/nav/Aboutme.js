@@ -32,7 +32,7 @@ function AboutMe() {
       <p>
         I am pursuing a Bachelor of Arts in Computer Science from the J.B. Speed School of 
         Engineering at the University of Louisville, with an anticipated graduation date in 
-        <strong>{education.anticipated_graduation}</strong>. My current GPA is <strong>{education.gpa}</strong>.
+        <strong>{education.anticipated_graduation}</strong>. My GPA is <strong>{education.gpa}</strong>.
       </p> 
     </div>
   );
