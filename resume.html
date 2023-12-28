@@ -10,7 +10,7 @@
 
 <body>
     <script>
-        fetch('resume1.json')
+        fetch('src/files/Resume.json')
     .then(response => response.json())
     .then(data => {
         document.querySelector(".name").textContent = data.name;
