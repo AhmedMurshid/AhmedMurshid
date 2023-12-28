@@ -28,7 +28,7 @@ function App() {
   return (
     <div className="App">
       <div className='all-button nav'>
-      <button onClick={toggleAboutMe} className='button-group'>About Me</button>
+      <button onClick={toggleAboutMe} className='button-group'>Just Me</button>
       <button onClick={toggleProjects} className='button-group'>Projects</button>
       <button onClick={toggleSkills} className='button-group'>Skills</button> 
       </div>
