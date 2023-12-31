@@ -1,0 +1,14 @@
+.shapeContainer {
+  position: absolute;
+  width: 100%; /* Adjust as needed */
+  height: 100%; /* Adjust to match the parent container */
+  top: 500;
+  left: 0;
+  z-index: 21; /* Place it behind the content */
+}
+
+/* Add styles for your main content container */
+.contentContainer {
+  position: relative;
+  z-index: 1; /* Ensure it's above the shapes */
+}

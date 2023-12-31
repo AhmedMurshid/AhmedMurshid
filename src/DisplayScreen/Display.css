@@ -4,3 +4,8 @@
     margin: auto;
     width: 70%;
 }
+ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  

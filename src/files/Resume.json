@@ -140,5 +140,161 @@
       "Muhammad Ali Center Council of Students (Aug 2016 – May 2020)",
       "Youth Leadership Fellowship (Aug 2020)",
       "Trio upward bounds (2019)"
+    ],
+    "courses": [
+      {
+        "Class": "CSE 420",
+        "Description": "DESIGN/OPERATING SYSTEMS",
+        "Term": "Spring 2024",
+        "Grade": null,
+        "Units": 3.00,
+        "Status": "In ProgressIn Progress",
+        "Professor": null
+      },
+      {
+        "Class": "CSE 496",
+        "Description": "BACS CAPSTONE DESIGN",
+        "Term": "Spring 2024",
+        "Grade": null,
+        "Units": 3.00,
+        "Status": "PlannedPlanned",
+        "Professor": null
+      },
+      {
+        "Class": "CSE 532",
+        "Description": "PYTHON & DATA ANALYTICS",
+        "Term": "Spring 2024",
+        "Grade": null,
+        "Units": 3.00,
+        "Status": "In ProgressIn Progress",
+        "Professor": null
+      },
+      {
+        "Class": "CSE 419",
+        "Description": "INTRO TO ALGORITHMS",
+        "Term": "Fall 2023",
+        "Grade": "B+",
+        "Units": 3.00,
+        "Status": "TakenTaken",
+        "Professor": "Rui Yu"
+      },
+      {
+        "Class": "CSE 525",
+        "Description": "MICROCOMPUTER DESIGN",
+        "Term": "Fall 2023",
+        "Grade": null,
+        "Units": 4.00,
+        "Status": "In CartIn Cart",
+        "Professor": null
+      },
+      {
+        "Class": "CSE 545",
+        "Description": "ARTIFICIAL INTELLIGENCE",
+        "Term": "Fall 2023",
+        "Grade": "A",
+        "Units": 3.00,
+        "Status": "TakenTaken",
+        "Professor": "Roman Yampolskiy"
+      },
+      {
+        "Class": "CSE 551",
+        "Description": "DATA VISUALIZATION",
+        "Term": "Fall 2023",
+        "Grade": "A",
+        "Units": 3.00,
+        "Status": "TakenTaken",
+        "Professor": "Harry Zhang"
+      },
+      {
+        "Class": "CSE 564",
+        "Description": "INTRO TO CRYPTOGRAPHY",
+        "Term": "Fall 2023",
+        "Grade": "B+",
+        "Units": 3.00,
+        "Status": "TakenTaken",
+        "Professor": "Dar-Jen Chang"
+      },
+      {
+        "Class": "CSE 235",
+        "Description": "COMPUTER SYSTEMS AND ORG",
+        "Term": "Fall 2022",
+        "Grade": "B+",
+        "Units": 3.00,
+        "Status": "TakenTaken",
+        "Professor": "Sabur Baidya"
+      },
+      {
+        "Class": "CSE 310",
+        "Description": "DISCRETE STRUCTURES",
+        "Term": "Fall 2022",
+        "Grade": "B",
+        "Units": 3.00,
+        "Status": "TakenTaken",
+        "Professor": "Andrew Karem"
+      },
+      {
+        "Class": "CSE 335",
+        "Description": "INTRODUCTION TO DATABASE",
+        "Term": "Fall 2022",
+        "Grade": "A-",
+        "Units": 3.00,
+        "Status": "TakenTaken",
+        "Professor": "Andrew Karem"
+      },
+      {
+        "Class": "CSE 350",
+        "Description": "INTR. TO SOFTWARE ENG'G",
+        "Term": "Fall 2022",
+        "Grade": "A+",
+        "Units": 3.00,
+        "Status": "TakenTaken",
+        "Professor": "Harry Zhang"
+      },
+      {
+        "Class": "CSE 110",
+        "Description": "MATH FOUNDATION FOR CS",
+        "Term": "Spring 2022",
+        "Grade": "C",
+        "Units": 3.00,
+        "Status": "TakenTaken",
+        "Professor": "Ibrahim Imam"
+      },
+      {
+        "Class": "CSE 302",
+        "Description": "DATA  STRUCTURES",
+        "Term": "Spring 2022",
+        "Grade": "B-",
+        "Units": 3.00,
+        "Status": "TakenTaken",
+        "Professor": "Andrew Karem"
+      },
+      {
+        "Class": "CSE 470",
+        "Description": "MOBILE DEVICE PRGRM",
+        "Term": "Spring 2022",
+        "Grade": "A+",
+        "Units": 3.00,
+        "Status": "TakenTaken",
+        "Professor": "Ibrahim Imam"
+      },
+      {
+        "Class": "CSE 130",
+        "Description": "INTRO TO PROG LANG",
+        "Term": "Spring 2021",
+        "Grade": "B+",
+        "Units": 3.00,
+        "Status": "TakenTaken",
+        "Professor": "Roman Yampolskiy"
+      },
+      {
+        "Class": "CSE 220",
+        "Description": "OO PROG DSGN WITH JAVA",
+        "Term": "Fall 2021",
+        "Grade": "C",
+        "Units": 3.00,
+        "Status": "TakenTaken",
+        "Professor": "Andrew Karem"
+      }
     ]
+  
   }
