@@ -23,15 +23,21 @@
         "PowerPoint",
         "VS Code",
         "Notepad++",
-        "GitHub"
+        "GitHub",
+        "React.js",
+        "Git",
+        "Linux"
       ],
       "Programming Languages": [
-        "HTML",
-        "CSS",
-        "JS",
+        "HTML5",
+        "CSS3",
+        "JavaScript",
         "Java Programming",
         "Python Programming",
-        "C#"
+        "C#",
+        "C++",
+        "C"
+
       ],
       "Database Management": [
         "MySQL",
@@ -45,15 +51,24 @@
     "Projects": [
       {
         "language": "Python",
+        "title": "AI NP-Complete Problems: A Deep Dive into the Chinese Postman Problem",
+        "description": "Implemented a novel approach combining Genetic Algorithms (GA) and Wisdom of Crowds (WoC) to solve the Chinese Postman Problem, an NP-complete problem. This project involved developing and testing a hybrid GA+WoC algorithm in Python, aiming to find the shortest closed path that visits every edge of a graph. The solution has practical applications in route optimization and logistics. Extensive experiments were conducted to ensure the robustness and efficiency of the algorithm, including the development of a GUI for visual representation of algorithmic solutions.",
+        "skills": ["Algorithms", "Data Analysis", "Research and Development", "Collaborative Problem Solving", "Teamwork"],
+        "pdfLink": "https://cardmaillouisville-my.sharepoint.com/:b:/g/personal/amabdu02_louisville_edu/Ed2u9VGIKG5DmxVxXEDqagsBAUhr58Ryc7ku41pFVrZd_Q?e=CbTvNu"
+      },      
+      {
+        "language": "Python",
         "title": "Interactive Health Data Visualization",
         "description": "Created an interactive interface for exploring and analyzing digital health data, extracting valuable insights through visualizations.",
+        "skills": ["Data Analysis", "Data Visualization","UI/UX Design","Project Management", "Statistical Analysis"],
         "link": "https://github.com/GobinB/DataVis_Term_Project/tree/updated_branch"
-        },
-        {
-          "language": "SQLite & Java",
-          "title": "Meal Rater App",
-          "description": "An Android application developed in Java, using SQL for database interactions. It allows users to rate meals from different restaurants. The main features include adding restaurant and dish names, rating them, and viewing aggregated ratings.",
-          "link": "https://github.com/AhmedMurshid/MealRater"
+      },
+      {
+        "language": "SQLite & Java",
+        "title": "Meal Rater App",
+        "description": "An Android application developed in Java, using SQL for database interactions. It allows users to rate meals from different restaurants. The main features include adding restaurant and dish names, rating them, and viewing aggregated ratings.",
+        "skills": ["Android App Development", "SQLite Database Management", "Java Programming", "User Interface Design"],
+        "link": "https://github.com/AhmedMurshid/MealRater"
       },         
       {
         "language": "C/C++",
@@ -79,7 +94,6 @@
         "link": "https://github.com/AhmedMurshid/GradeCalculator"
       }
     ],
-    
     "work_experience": [
       {
         "company": "UPS",

@@ -11,15 +11,15 @@ function Skills() {
         <h3>Software and Tools</h3>
         <ul>
           {skills["Software and Tools"].map((skill, index) => (
-            <li key={index}>{skill}</li>
+            <span key={index} style={{ backgroundColor: '#f0f0f0', padding: '1px', borderRadius: '5px', margin: '2px' }}>{skill} </span>
           ))}
         </ul>
       </div>
       <div>
         <h3>Programming Languages</h3>
-        <ul>
+        <ul >
           {skills["Programming Languages"].map((skill, index) => (
-            <li key={index}>{skill}</li>
+            <span key={index} style={{ backgroundColor: '#f0f0f0', padding: '1px', borderRadius: '5px', margin: '2px' }}>{skill} </span>
           ))}
         </ul>
       </div>
@@ -27,7 +27,7 @@ function Skills() {
         <h3>Database Management</h3>
         <ul>
           {skills["Database Management"].map((skill, index) => (
-            <li key={index}>{skill}</li>
+            <span key={index} style={{ backgroundColor: '#f0f0f0', padding: '1px', borderRadius: '5px',margin: '2px' }}>{skill} </span>
           ))}
         </ul>
       </div>

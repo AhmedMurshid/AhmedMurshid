@@ -15,7 +15,7 @@ function AboutMe() {
     <div>
       <h2>About Me</h2>
       <div>
-        <img src={ProfileImage} alt='' width="100" height="140"/>
+        <img src={ProfileImage} alt='' width="100" height="140" style={{ backgroundColor: '#f0f0f0', padding: '10px', borderRadius: '500px' }}/>
       </div>
       <p>
         I am <strong>{name}</strong>, a computer science student currently located in <strong>{contact.location}</strong>. 
