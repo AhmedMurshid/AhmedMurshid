@@ -1,4 +1,5 @@
-# Just Me - Ahmed M Abdullahi's Portfolio
+# About Me - Ahmed M Abdullahi
+**Portfolio**
 ![Alt text](just-me2.png )
 
 
