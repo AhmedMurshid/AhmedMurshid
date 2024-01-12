@@ -1,5 +1,8 @@
 import React from 'react';
 import projectsData from '../files/Resume.json';
+// Define color variables
+
+const backgroundColor1 = '#defe';
 
 function Projects() {
   const projects = projectsData.Projects || [];
@@ -23,7 +26,8 @@ function Projects() {
       <div>
   <h2>Projects</h2>
   {projects.map((project, index) => (
-    <div key={index} id={`project-${index}`}>
+    <div key={index} id={`project-${index}`} style={{ backgroungcolor: backgroundColor1, padding: '10px', marginBottom: '10px' }}>
+    
       <h3 style={{ backgroundColor: '#f0f0f0', padding: '5px', borderRadius: '5px' }}>{project.title}</h3>
       <p>Language: {project.language}</p>
       <p><strong style={{ backgroundColor: '#f0f0f0', padding: '1px', borderRadius: '5px' }}>Description:</strong> <br/>{project.description}</p>

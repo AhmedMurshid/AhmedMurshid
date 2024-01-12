@@ -3,7 +3,7 @@
     "image": "src/images/me.jpeg",
     "contact": {
       "email": "amabdu02@louisville.edu",
-      "phone": "(502) 701-3239",
+      "phone": "(502) 792-5573",
       "location": "Louisville, KY",
       "website": "https://ahmedmurshid.github.io/my-site/"
     }, 
@@ -55,7 +55,14 @@
         "description": "Implemented a novel approach combining Genetic Algorithms (GA) and Wisdom of Crowds (WoC) to solve the Chinese Postman Problem, an NP-complete problem. This project involved developing and testing a hybrid GA+WoC algorithm in Python, aiming to find the shortest closed path that visits every edge of a graph. The solution has practical applications in route optimization and logistics. Extensive experiments were conducted to ensure the robustness and efficiency of the algorithm, including the development of a GUI for visual representation of algorithmic solutions.",
         "skills": ["Algorithms", "Data Analysis", "Research and Development", "Collaborative Problem Solving", "Teamwork"],
         "pdfLink": "https://cardmaillouisville-my.sharepoint.com/:b:/g/personal/amabdu02_louisville_edu/Ed2u9VGIKG5DmxVxXEDqagsBAUhr58Ryc7ku41pFVrZd_Q?e=CbTvNu"
-      },      
+      }, 
+      {
+        "language": "PL/SQL & SQL",
+        "title": "UPS - WTO Refresh - Toad Oracle Project",
+        "description": "This project involves the use of Toad for Oracle to develop and refresh complex PL/SQL procedures, functions, and SQL scripts for the World Trade Organization (WTO) database systems. It includes the optimization of existing queries and the implementation of new features to enhance the performance and reliability of the WTO data processing and reporting tasks.",
+        "skills": ["PL/SQL Development", "SQL Scripting", "Toad for Oracle", "Database Optimization", "Performance Tuning"],
+        "link": ""
+      },
       {
         "language": "Python",
         "title": "Interactive Health Data Visualization",

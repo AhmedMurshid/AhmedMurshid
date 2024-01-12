@@ -51,3 +51,23 @@
   height: auto;
 
 }
+table {
+  width: 50%; /* Adjust the width as needed */
+  margin-left: auto; /* Centers table on the page */
+  margin-right: auto; /* Centers table on the page */
+  border-collapse: collapse;
+}
+
+td {
+  padding: 8px;
+  text-align: left; /* Aligns text to the left */
+}
+
+td:first-child {
+  font-weight: bold;
+  text-align: right; /* Aligns the labels to the right, so they are closer to the data */
+}
+
+a {
+  color: #00f; /* Example link color */
+}
