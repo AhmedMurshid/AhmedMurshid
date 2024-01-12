@@ -1,5 +1,6 @@
 # Just Me - Ahmed M Abdullahi's Portfolio
-just-me.png
+![Alt text](just-me.png )
+
 
 Welcome to "Just Me", my personal portfolio website. This site is a representation of my academic journey and achievements as a computer science student, including my projects, skills, and coursework.
 
