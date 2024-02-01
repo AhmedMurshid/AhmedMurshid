@@ -34,10 +34,15 @@ function AboutMe() {
     <td style={{ backgroundColor: '#f0f0f0', padding: '3px', borderRadius: '5px', marginBottom:'0px' }}><strong>Phone:</strong></td>
     <td>{contact.phone}</td>
   </tr>
-  <tr style={{margin: '3px'}}>
-    <td style={{ backgroundColor: '#f0f0f0', padding: '3px', borderRadius: '5px', marginBottom:'0px' }}><strong>Website:</strong></td>
-    <td><a href="{contact.website}" target="_blank" rel="noopener noreferrer">{contact.website}</a></td>
-  </tr>
+  <tr style={{ margin: '3px' }}>
+  <td style={{ backgroundColor: '#f0f0f0', padding: '3px', borderRadius: '5px', marginBottom: '0px' }}><strong>LinkedIn:</strong></td>
+  <td>
+    <a href="https://www.linkedin.com/in/ahmed001a/" target="_blank" rel="noopener noreferrer">
+      {contact.linkedin}
+    </a>
+  </td>
+</tr>
+
   <tr style={{margin: '3px'}}>
     <td style={{ backgroundColor: '#f0f0f0', padding: '3px', borderRadius: '5px', marginBottom:'0px' }}><strong>Career Goal:</strong></td>
     <td>Contribute to innovative projects and collaborate with others for mutual growth.</td>
