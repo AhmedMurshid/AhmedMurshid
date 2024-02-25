@@ -1,0 +1,26 @@
+{
+    "Clubs": [
+      {
+        "name": "Somali Student Association",
+        "category": "Cultural",
+        "description": "Somali Student Association focuses on bringing awareness to the Somali culture and creating a sense of community among students.",
+        "events1": [
+          {
+            "name": "Somali Night",
+            "date": "2024-03-10"
+          },
+          {
+            "name": "Cultural Exchange Meetup",
+            "date": "2024-11-01"
+          }
+        ],
+        "contact": {
+          "name": "Farhia Mohamed",
+          "email": "faabdu03@louisville.edu"
+        },
+        "imageUrl": "ssa.jpeg"
+      }
+    ]
+
+  }
+  
