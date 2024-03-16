@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
+// import NavigationButtons from './NavSwitch';
 import AppRoutes from './AppRoutes';
 import './App.css';
 
