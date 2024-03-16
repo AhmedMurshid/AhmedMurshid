@@ -1,27 +1,37 @@
+// DisplayComponents.js
 import React from 'react';
-import AboutMe from '../nav/Aboutme';
-import Projects from '../nav/Projects'; 
-import Skills from '../nav/Skills';
-import Courses from '../nav/Courses'; 
-import Clubs from '../nav/Clubs';
-import './Display.css'
 
+import AboutMe from '../nav/Aboutme';
+import Projects from '../nav/Projects';
+import Skills from '../nav/Skills';
+import Courses from '../nav/Courses';
+import Clubs from '../nav/Clubs';
+import NavigationButtons from '../NavSwitch'; // Ensure this component is adjusted to use toggleVisibility
+
+import './Display.css';
 import RandomShapes from './RandomShapes';
 
-function DisplayComponets({ showAboutMe, showProjects, showClubs, showSkills, showCourses}) {
+function DisplayComponents({
+  showAboutMe,
+  showProjects,
+  showClubs,
+  showSkills,
+  showCourses,
+  handleOpenPDF,
+  toggleVisibility, // Passed from ParentComponent
+}) {
   return (
     <div className='MainDiv'>
+      <NavigationButtons toggleVisibility={toggleVisibility} handleOpenPDF={handleOpenPDF} />
       <h1>Ahmed M Abdullahi</h1>
-      <p></p>
       {showAboutMe && <AboutMe />}
       {showProjects && <Projects />}
-      {showClubs && <Clubs />} 
+      {showClubs && <Clubs />}
       {showSkills && <Skills />}
       {showCourses && <Courses />}
-      
       <RandomShapes />
     </div>
   );
 }
 
-export default DisplayComponets;
+export default DisplayComponents;
