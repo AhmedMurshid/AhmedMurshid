@@ -8,7 +8,7 @@ Ahmed M Abdullahi's Portfolio
 
 _Location_: Louisville, KY | [LinkedIn Profile](https://www.linkedin.com/in/ahmed001a/)
 
-<div style="display: flex; justify-content: space-between; align-items: center; max-width: 100%;">
+<div style="display: flex; justify-content: space-between; align-items: center; max-width: 50%;">
   <div style="width: 15%; margin-right: 5%;">
     <h2>📊 My GitHub Stats</h2>
     <img src="https://github-readme-stats.vercel.app/api?username=AhmedMurshid&show_icons=true" alt="GitHub Stats" style="width: 100%; height: auto;">
