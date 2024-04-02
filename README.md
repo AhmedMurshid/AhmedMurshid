@@ -1,18 +1,26 @@
+---
+title: "Ahmed M Abdullahi's Portfolio"
+layout: modern
+---
+
 # Hi, I'm AHMED M ABDULLAHI 👋
 
-![AHMED](src/images/me.jpeg)
+<img src="src/images/me.jpeg" alt="AHMED" style="border-radius: 50%; width: 150px;">
 
-*Objective*: Seeking opportunities to contribute to innovative projects and collaborate with experienced professionals for mutual growth.
+**Objective**: Seeking opportunities to contribute to innovative projects and collaborate with experienced professionals for mutual growth.
 
-Based in Louisville, KY | [LinkedIn](https://www.linkedin.com/in/ahmed001a/)
+_Location_: Louisville, KY | [LinkedIn Profile](https://www.linkedin.com/in/ahmed001a/)
 
-## My GitHub Stats
-
-![Your GitHub stats](https://github-readme-stats.vercel.app/api?username=AhmedMurshid&show_icons=true)
-
-## Most Used Languages
-
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=AhmedMurshid&layout=compact)
+<div style="display: flex; justify-content: space-between; align-items: center;">
+  <div>
+    <h2>📊 My GitHub Stats</h2>
+    <img src="https://github-readme-stats.vercel.app/api?username=AhmedMurshid&show_icons=true" alt="GitHub Stats">
+  </div>
+  <div>
+    <h2>💻 Most Used Languages</h2>
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AhmedMurshid&layout=compact" alt="Top Languages">
+  </div>
+</div>
 
 ## Education 🎓
 
@@ -22,16 +30,15 @@ Based in Louisville, KY | [LinkedIn](https://www.linkedin.com/in/ahmed001a/)
 
 ## About Me
 
-I am Ahmed M Abdullahi, a dedicated Computer Science student at the J.B. Speed School of Engineering at the University of Louisville. This website is a comprehensive overview of my professional background, educational milestones, and my aspirations within the field of technology.
-
+I am Ahmed M Abdullahi, a dedicated Computer Science student at the J.B. Speed School of Engineering at the University of Louisville. This portfolio is a comprehensive overview of my professional background, educational milestones, and my aspirations within the field of technology.
 
 ## Skills 💼
 
 **Software and Tools**: Docker, Excel, PowerPoint, VS Code, Notepad++, GitHub, React.js, Git, Linux
 
-**Programming Languages**: HTML5, CSS3, JavaScript, Java Programming, Python Programming, C#, C++, C
+**Programming Languages**: HTML5, CSS3, JavaScript, Java, Python, C#, C++, C
 
-**Database Management**: MySQL, PL/SQL, Databases, Oracle Database, Data Visualization, Data Analysis
+**Database Management**: MySQL, PL/SQL, Oracle Database, Data Visualization, Data Analysis
 
 ## Features
 
@@ -39,17 +46,17 @@ I am Ahmed M Abdullahi, a dedicated Computer Science student at the J.B. Speed S
 - **Skills:** A summary of the technical skills and tools I've mastered.
 - **Courses:** An overview of the coursework I have completed, underpinning my knowledge in Computer Science.
 
-# About Me - Ahmed M Abdullahi
-**Portfolio**
-![Alt text](just-me2.png ) 
+# Portfolio Overview - Ahmed M Abdullahi
+
+<img src="just-me2.png" alt="Portfolio Overview" style="width: 100%; max-width: 600px;">
 
 ## Contact
 
-If you wish to reach out for professional inquiries or to discuss potential opportunities, please contact me at:
+For professional inquiries or to discuss potential opportunities, please reach out via:
 
 - Email: `amabdul02@louisville.edu`
 - Phone: `(502) 792-5573`
 
-For a more detailed look, please visit my website at [ahmedmurshid.github.io/my-site/](https://ahmedmurshid.github.io/my-site/).
+For a more detailed look, visit my [personal website](https://ahmedmurshid.github.io/my-site/).
 
-Thank you for taking the time to explore my portfolio!
+Thank you for exploring my portfolio!
