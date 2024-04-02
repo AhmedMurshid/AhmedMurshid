@@ -8,16 +8,17 @@ Ahmed M Abdullahi's Portfolio
 
 _Location_: Louisville, KY | [LinkedIn Profile](https://www.linkedin.com/in/ahmed001a/)
 
-<div style="display: flex; flex-wrap: wrap; justify-content: space-around; align-items: flex-start;">
-  <div style="flex: 1; min-width: 100px; margin: 10px;">
-    <h2 style="text-align: center;">📊 My GitHub Stats</h2>
+<div style="display: flex; justify-content: space-between; align-items: center; max-width: 100%;">
+  <div style="width: 45%; margin-right: 5%;">
+    <h2>📊 My GitHub Stats</h2>
     <img src="https://github-readme-stats.vercel.app/api?username=AhmedMurshid&show_icons=true" alt="GitHub Stats" style="width: 100%; height: auto;">
   </div>
-  <div style="flex: 1; min-width: 100px; margin: 10px;">
-    <h2 style="text-align: center;">💻 Most Used Languages</h2>
+  <div style="width: 45%;">
+    <h2>💻 Most Used Languages</h2>
     <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AhmedMurshid&layout=compact" alt="Top Languages" style="width: 100%; height: auto;">
   </div>
 </div>
+
 
 
 ## Education 🎓
