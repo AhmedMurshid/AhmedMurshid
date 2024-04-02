@@ -6,6 +6,10 @@ function Skills() {
 
   return (
     <div>
+       <div >
+      <h2>💻 Most Used Languages</h2>
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AhmedMurshid&layout=compact" alt="Top Languages" style={{ width: "50%", height: "auto" }} />
+      </div>
       <h2>Skills</h2>
       <div>
         <h3>Software and Tools</h3>
@@ -31,6 +35,8 @@ function Skills() {
           ))}
         </ul>
       </div>
+     
+      
     </div>
   );
 }
