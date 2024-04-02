@@ -8,11 +8,11 @@ Based in Louisville, KY | [LinkedIn](https://www.linkedin.com/in/ahmed001a/)
 
 ## My GitHub Stats
 
-![Your GitHub stats](https://github-readme-stats.vercel.app/api?username=[Your-GitHub-Username]&show_icons=true)
+![Your GitHub stats](https://github-readme-stats.vercel.app/api?username=[AhmedMurshid]&show_icons=true)
 
 ## Most Used Languages
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=[Your-GitHub-Username]&layout=compact)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=[AhmedMurshid]&layout=compact)
 
 ## Education 🎓
 
