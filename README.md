@@ -6,8 +6,6 @@ Ahmed M Abdullahi's Portfolio
 
 <img src="src/images/me.jpeg" alt="AHMED" style="border-radius: 50%; width: 150px;">
 
-**Objective**: Seeking opportunities to contribute to innovative projects and collaborate with experienced professionals for mutual growth.
-
 _Location_: Louisville, KY | [LinkedIn Profile](https://www.linkedin.com/in/ahmed001a/)
 
 <div style="display: flex; justify-content: space-between; align-items: center;">
