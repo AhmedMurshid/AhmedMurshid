@@ -1,6 +1,5 @@
 ---
-title: "Ahmed M Abdullahi's Portfolio"
-layout: modern
+Ahmed M Abdullahi's Portfolio
 ---
 
 # Hi, I'm AHMED M ABDULLAHI 👋
