@@ -1,0 +1,17 @@
+.tabs button {
+    padding: 10px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+  }
+  
+  .tabs button.active {
+    background-color: #fff;
+    border-bottom: none;
+  }
+  
+  .content {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
