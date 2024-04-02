@@ -7,7 +7,7 @@ Ahmed M Abdullahi's Portfolio
 <img src="src/images/me.jpeg" alt="AHMED" style="border-radius: 50%; width: 150px;">
 
 _Location_: Louisville, KY | [LinkedIn Profile](https://www.linkedin.com/in/ahmed001a/)
-Visit my [my website](https://ahmedmurshid.github.io/AhmedMurshid/).
+Visit [my website](https://ahmedmurshid.github.io/AhmedMurshid/).
 
 
 <div style="display: flex; justify-content: space-between; align-items: center; max-width: 50%;">
