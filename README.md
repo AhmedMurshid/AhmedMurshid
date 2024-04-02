@@ -1,34 +1,44 @@
-# About Me - Ahmed M Abdullahi
-**Portfolio**
-![Alt text](just-me2.png )
+---
+Ahmed M Abdullahi's Portfolio
+---
+
+# Hi, I'm AHMED M ABDULLAHI 👋
+
+<img src="src/images/me.jpeg" alt="AHMED" style="border-radius: 50%; width: 150px;">
+
+_Location_: Louisville, KY | [LinkedIn Profile](https://www.linkedin.com/in/ahmed001a/)
+
+<div style="display: flex; justify-content: space-between; align-items: center; max-width: 50%;">
+<!--   <div style="width: 15%; margin-right: 5%;">
+    <h2>📊 My GitHub Stats</h2>
+    <img src="https://github-readme-stats.vercel.app/api?username=AhmedMurshid&show_icons=true" alt="GitHub Stats" style="width: 50%; height: auto;">
+  </div> -->
+  <div style="width: 15%;">
+    <h2>💻 Most Used Languages</h2>
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AhmedMurshid&layout=compact" alt="Top Languages" style="width: 50%; height: auto;">
+  </div>
+</div>
 
 
-Welcome to "Just Me", my personal portfolio website. This site is a representation of my academic journey and achievements as a computer science student, including my projects, skills, and coursework.
 
-## About Me
+## Education 🎓
 
-I am Ahmed M Abdullahi, a dedicated Computer Science student at the J.B. Speed School of Engineering at the University of Louisville. This website is a comprehensive overview of my professional background, educational milestones, and my aspirations within the field of technology.
+- **Degree**: Bachelor of Art in Computer Science
+- **School**: J.B. Speed School of Engineering, University of Louisville
+- **Anticipated Graduation**: December 2024
 
-## Features
 
-- **Projects:** Discover the projects I've worked on, reflecting my problem-solving skills and coding expertise.
-- **Skills:** A summary of the technical skills and tools I've mastered.
-- **Courses:** An overview of the coursework I have completed, underpinning my knowledge in Computer Science.
+# Portfolio Overview - Ahmed M Abdullahi
 
-## Usage
-
-Explore the different sections of my website to learn more about my professional portfolio:
-- Navigate to the **Projects** tab to view my work.
-- Check out the **Skills** tab to see what I can do.
-- The **Courses** tab will guide you through my educational background.
+<img src="just-me2.png" alt="Portfolio Overview" style="width: 100%; max-width: 600px;">
 
 ## Contact
 
-If you wish to reach out for professional inquiries or to discuss potential opportunities, please contact me at:
+For professional inquiries or to discuss potential opportunities, please reach out via:
 
 - Email: `amabdul02@louisville.edu`
 - Phone: `(502) 792-5573`
 
-For a more detailed look, please visit my website at [ahmedmurshid.github.io/my-site/](https://ahmedmurshid.github.io/my-site/).
+For a more detailed look, visit my [personal website](https://ahmedmurshid.github.io/my-site/).
 
-Thank you for taking the time to explore my portfolio!
+Thank you for exploring my portfolio!
