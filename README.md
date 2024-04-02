@@ -7,6 +7,8 @@ Ahmed M Abdullahi's Portfolio
 <img src="src/images/me.jpeg" alt="AHMED" style="border-radius: 50%; width: 150px;">
 
 _Location_: Louisville, KY | [LinkedIn Profile](https://www.linkedin.com/in/ahmed001a/)
+Visit my [my website](https://ahmedmurshid.github.io/AhmedMurshid/).
+
 
 <div style="display: flex; justify-content: space-between; align-items: center; max-width: 50%;">
 <!--   <div style="width: 15%; margin-right: 5%;">
@@ -39,6 +41,6 @@ For professional inquiries or to discuss potential opportunities, please reach o
 - Email: `amabdul02@louisville.edu`
 - Phone: `(502) 792-5573`
 
-For a more detailed look, visit my [personal website](https://ahmedmurshid.github.io/my-site/).
+For a more detailed look, visit my [personal website](https://ahmedmurshid.github.io/AhmedMurshid/).
 
 Thank you for exploring my portfolio!
