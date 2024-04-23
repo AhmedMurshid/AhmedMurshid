@@ -1,17 +1,114 @@
-.tabs button {
-    padding: 10px;
-    margin-right: 5px;
-    border: 1px solid #ccc;
-    background-color: #f0f0f0;
-  }
+/* General Container and Typography Styles */
+body {
+  font-family: Arial, sans-serif;
+  background: #95a5a9;
+  margin: 0;
+  padding: 0;
+}
+.App{
+background-color: #95a5a9;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Tab Navigation Styles */
+.box {
+  --mask:
+    radial-gradient(2.39em at 50% calc(100% - 3.3em),#000 99%,#0000 101%) calc(50% - 4em) 0/8em 100%,
+    radial-gradient(2.39em at 50% calc(100% + 1.3em),#0000 99%,#000 101%) 50% calc(100% - 2em)/8em 100% repeat-x;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+}
+/* HTML: <div class="ribbon">Your text content</div> */
+/* HTML: <div class="ribbon">Your text content</div> */
+.ribbon {
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+}
+.ribbon {
+  --s: 1.8em; /* the ribbon size */
+  --d: .8em;  /* the depth */
+  --c: .8em;  /* the cutout part */
   
-  .tabs button.active {
-    background-color: #fff;
-    border-bottom: none;
-  }
-  
-  .content {
-    border: 1px solid #ccc;
-    padding: 10px;
-  }
-  
+  padding: var(--d) calc(var(--s) + .5em) 0;
+  line-height: 1.8;
+  background:
+    conic-gradient(from  45deg at left  var(--s) top var(--d),
+     #0008 12.5%,#0000 0 37.5%,#0004 0) 0   /50% 100% no-repeat,
+    conic-gradient(from -45deg at right var(--s) top var(--d),
+     #0004 62.5%,#0000 0 87.5%,#0008 0) 100%/50% 100% no-repeat;
+  clip-path: polygon(0 0,calc(var(--s) + var(--d)) 0,calc(var(--s) + var(--d)) var(--d),calc(100% - var(--s) - var(--d)) var(--d),calc(100% - var(--s) - var(--d)) 0,100% 0, calc(100% - var(--c)) calc(50% - var(--d)/2),100% calc(100% - var(--d)),calc(100% - var(--s)) calc(100% - var(--d)),calc(100% - var(--s)) 100%,var(--s) 100%,var(--s) calc(100% - var(--d)),0 calc(100% - var(--d)),var(--c) calc(50% - var(--d)/2));
+  background-color: #404746; /* the main color */
+  width: fit-content;
+}
+.tabs {
+  display: flex;
+  margin-bottom: 20px;
+}
+.tab {
+  padding: 10px 20px;
+  margin-right: 5px;
+  background: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  outline: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+.tab.active, .tab:hover {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+/* Content Area Styles */
+.content {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Informational Tooltip */
+.info-icon {
+  cursor: pointer;
+  color: #007bff;
+  display: inline-block;
+  margin-left: 10px;
+  font-weight: bold;
+}
+.tooltip {
+  position: absolute;
+  border: 1px solid #dcdcdc;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display: none; /* Initially hidden; display on hover or click */
+}
+
+/* Interactive Elements */
+.interactive-tooth-anatomy {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Strong emphasis styles within text */
+strong {
+  color: #333;
+}
+.tooth-anatomy svg {
+  width: 100%;
+  max-width: 400px; /* Adjust based on layout */
+  cursor: pointer;
+}
+
+.tooth-anatomy path:hover {
+  fill-opacity: 0.8;
+}
+

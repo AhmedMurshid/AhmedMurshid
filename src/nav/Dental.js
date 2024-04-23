@@ -1,84 +1,122 @@
+
 import React, { useState } from 'react';
 import './dental.css';
-import ContentSections from './ContentSections';
+import Quiz from './Quiz';
+import InteractiveTeethDiagram from './InteractiveToothAnatomy';
+import Tooltip from './Tooltip'; // Assume this is a simple Tooltip component you've created
 
 const Dental = () => {
-  const [activeTab, setActiveTab] = useState('introduction');
+  const [activeTab, setActiveTab] = useState('Overview');
+  const [quizScore, setQuizScore] = useState(0);
 
   const handleTabClick = (tab) => {
     setActiveTab(tab);
   };
 
+  const tabContent = {
+    introduction: (
+      <div id="class-student-info">
+    <div id="class-details">
+        <h2>Class Information</h2>
+        <p><strong>Course Title:</strong> Special Topics in Biological Anthropology</p>
+        <p><strong>Instructor:</strong> Dr. Carey J. Garland</p>
+        <p><strong>Semester:</strong> Spring 2024</p>
+        <p><strong>Class Code:</strong> ANTH 363</p>
+    </div>
+
+    <div id="student-details">
+        <h2>Student Information</h2>
+        <p><strong>Name:</strong>Ahmed Abdullahi</p>
+        <p><strong>Student ID:</strong> 5396187</p>
+        <p><strong>Assignment:</strong> Dental Anatomy</p>
+        <p><strong>Date:</strong> April 22, 2024</p>
+    </div>
+</div>
+    ),
+    Overview: (
+      <div>
+      <h1>Human Dental Anatomy</h1>
+    
+      <div id="overview">
+          <h2>Overview</h2>
+          <p>Human teeth are vital components of the digestive system, responsible for mechanically breaking down food through cutting, tearing, and grinding before it is swallowed and digested. These functions are facilitated by two sets of teeth: primary and secondary, also known as permanent teeth.</p>
+      </div>
+      </div>
+    ),
+    primary_permanent: (
+      <div>
+            <div id="primary-teeth">
+        <h2>Primary Teeth</h2>
+        <p>The primary dentition consists of 20 teeth, which emerge around six months of age and are integral to a child’s development. They aid in the child's ability to chew and speak and maintain space in the jaws for future permanent teeth.</p>
+        <ul>
+            <li><strong>Central and Lateral Incisors:</strong> For cutting food.</li>
+            <li><strong>Canines:</strong> For tearing food.</li>
+            <li><strong>First and Second Molars:</strong> For grinding food.</li>
+        </ul>
+    </div>
+    
+    <div id="permanent-teeth">
+        <h2>Permanent Teeth</h2>
+        <p>Adults typically have 32 permanent teeth, replacing the primary teeth around the age of six and continuing to emerge until around 21 years of age.</p>
+        <ul>
+            <li><strong>Central and Lateral Incisors:</strong> Located at the front of the mouth for cutting.</li>
+            <li><strong>Canines:</strong> Situated at the "corners" of the dental arch for tearing.</li>
+            <li><strong>Premolars (Bicuspids):</strong> Absent in the primary set, these teeth have a flat top for crushing food.</li>
+            <li><strong>Molars:</strong> Including the third molars or wisdom teeth, for grinding food.</li>
+        </ul>
+    </div>
+    {/* add this image https://teachmeanatomy.info/wp-content/uploads/Primary-and-Permanent-Dentition-1024x616.png */}
+    <img src="https://teachmeanatomy.info/wp-content/uploads/Primary-and-Permanent-Dentition-1024x616.png" alt="Primary and Permanent Dentition" />
+    <p>Image credit: <a href="https://teachmeanatomy.info/head/other/child-adult-dentition/" target="_blank" rel="noopener noreferrer">TeachMeAnatomy</a></p>
+      </div>
+    ),
+    tooth_structure: (
+      <div id="tooth-structure">
+      <h2>Tooth Structure</h2>
+      <ul>
+          <li><strong>Enamel:</strong> The hardest substance in the body, forming the outermost layer of the tooth.</li>
+          <li><strong>Dentin:</strong> Beneath the enamel, it comprises the bulk of the tooth’s structure and is also found in the root.</li>
+          <li><strong>Pulp:</strong> The soft, innermost part containing nerves and blood vessels.</li>
+          <li><strong>Cementum:</strong> This covers the root and helps anchor the tooth within the jawbone.</li>
+      </ul>
+  </div>
+    ),
+    ciatation: (
+      <div id="references">
+      <h2>References</h2>
+      <ul>
+          <li><a href="https://en.wikipedia.org/wiki/Human_tooth" target="_blank">Wikipedia contributors, "Human tooth," Wikipedia, The Free Encyclopedia.</a></li>
+          <li><a href="https://teachmeanatomy.info/head/organs/teeth/tooth-development/" target="_blank">TeachMeAnatomy contributors, "Child and Adult Dentition," TeachMeAnatomy.</a></li>
+      </ul>
+  </div>
+    ),
+    quiz: (
+      <Quiz setQuizScore={setQuizScore} />
+     )
+    // anatomy: (
+    //   <div>
+    //     <h2>Interactive Tooth Anatomy</h2>
+    //     <InteractiveTeethDiagram />
+    //     <p>Learn more about each part of the tooth by clicking on it.</p>
+    //   </div>
+    // )
+  };
+
   return (
-    <div>
-      <div className="tabs">
-        <button 
-          className={`tab ${activeTab === 'introduction' ? 'active' : ''}`}
-          onClick={() => handleTabClick('introduction')}
-        >
-          Introduction
-        </button>
-        <button 
-          className={`tab ${activeTab === 'chapter1' ? 'active' : ''}`}
-          onClick={() => handleTabClick('chapter1')}
-        >
-          The Basics
-        </button>
-        <button 
-          className={`tab ${activeTab === 'chapter2' ? 'active' : ''}`}
-          onClick={() => handleTabClick('chapter2')}
-        >
-          Deciduous vs. Permanent
-        </button>
-        <button
-          className={`tab ${activeTab === 'quiz' ? 'active' : ''}`}
-          onClick={() => handleTabClick('quiz')}
-        >
-          Quiz
-        </button>
-        <button
-          className={`tab ${activeTab === 'anatomy' ? 'active' : ''}`}
-          onClick={() => handleTabClick('anatomy')}
-        >
-          Tooth Anatomy
-        </button>
+    <div >
+      <div className="tabs, ribbon" >
+        {Object.keys(tabContent).map(tab => (
+          <button 
+            key={tab}
+            className={`tab ${activeTab === tab ? 'active' : ''}`}
+            onClick={() => handleTabClick(tab)}
+          >
+            {tab.charAt(0).toUpperCase() + tab.slice(1).replace(/([A-Z])/g, ' $1').trim()}
+          </button>
+        ))}
       </div>
       <div className="content">
-        {activeTab === 'introduction' && (
-          <div>
-            <h2>Introduction to Dental Structures</h2>
-            <p>This guide aims to explore the fascinating world of human dental structures...</p>
-          </div>
-        )}
-        {activeTab === 'chapter1' && (
-          <div>
-            <h2>The Basics of Dental Anatomy</h2>
-            <p>Human teeth are divided into four main types...</p>
-
-          </div>
-        )}
-        {activeTab === 'chapter2' && (
-          <div>
-            <h2>Deciduous vs. Permanent Teeth</h2>
-            <ContentSections />
-
-
-          </div>
-        )}
-        {activeTab === 'quiz' && (
-          <div>
-            <h2>Dental Health Quiz</h2>
-            {/* Implement Quiz Component here */}
-            <p>Test your knowledge on dental health with this quiz!</p>
-          </div>
-        )}
-        {activeTab === 'anatomy' && (
-          <div>
-            <h2>Interactive Tooth Anatomy</h2>
-            {/* Implement Interactive Tooth Anatomy here */}
-            <p>Learn more about each part of the tooth by clicking on it.</p>
-          </div>
-        )}
+        {tabContent[activeTab]}
       </div>
     </div>
   );

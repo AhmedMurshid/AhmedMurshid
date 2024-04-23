@@ -1,9 +1,7 @@
-// Quiz.js
 import React, { useState } from 'react';
 import styles from './Dental.module.css';
 
 const Quiz = ({ setQuizScore }) => {
-  // Questions and answers for the quiz
   const questions = [
     {
       questionText: 'What is the primary function of incisors?',
@@ -24,47 +22,62 @@ const Quiz = ({ setQuizScore }) => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [showScore, setShowScore] = useState(false);
   const [score, setScore] = useState(0);
+  const [quizStarted, setQuizStarted] = useState(false);
+  const [selectedAnswers, setSelectedAnswers] = useState(Array(questions.length).fill(null));
 
-  const handleAnswerOptionClick = (isCorrect) => {
-    if (isCorrect) {
-      setScore(score + 1);
-    }
+  const handleAnswerOptionClick = (index, isCorrect) => {
+    const newAnswers = [...selectedAnswers];
+    newAnswers[currentQuestion] = { isCorrect, index };
+    setSelectedAnswers(newAnswers);
+  };
 
-    const nextQuestion = currentQuestion + 1;
-    if (nextQuestion < questions.length) {
-      setCurrentQuestion(nextQuestion);
-    } else {
-      setShowScore(true);
-      setQuizScore(score + 1); // Update the overall score in the parent component
+  const handleSubmitQuiz = () => {
+    const finalScore = selectedAnswers.reduce((acc, answer) => acc + (answer?.isCorrect ? 1 : 0), 0);
+    setScore(finalScore);
+    setShowScore(true);
+    if (typeof setQuizScore === 'function') {
+      setQuizScore(finalScore);
     }
   };
 
   return (
     <div className={styles.quizSection}>
-      <h2>Quiz</h2>
-      {showScore ? (
-        <div>
-          <p>You scored {score} out of {questions.length}</p>
-          <button onClick={() => window.location.reload(false)}>Restart Quiz</button>
-        </div>
+      {!quizStarted ? (
+        <button onClick={() => setQuizStarted(true)}>Start Quiz</button>
       ) : (
         <>
-          <div className={styles.questionSection}>
-            <div className={styles.questionCount}>
-              <span>Question {currentQuestion + 1}</span>/{questions.length}
+          <h2>Quiz</h2>
+          {showScore ? (
+            <div>
+              <p>You scored {score} out of {questions.length}</p>
+              <button onClick={() => window.location.reload(false)}>Restart Quiz</button>
             </div>
-            <div className={styles.questionText}>{questions[currentQuestion].questionText}</div>
-          </div>
-          <div className={styles.answerSection}>
-            {questions[currentQuestion].answerOptions.map((answerOption, index) => (
-              <button
-                key={index}
-                onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}
-              >
-                {answerOption.answerText}
-              </button>
-            ))}
-          </div>
+          ) : (
+            <>
+              <div className={styles.questionSection}>
+                <div className={styles.questionCount}>
+                  <span>Question {currentQuestion + 1}</span>/{questions.length}
+                </div>
+                <div className={styles.questionText}>{questions[currentQuestion].questionText}</div>
+              </div>
+              <div className={styles.answerSection}>
+                {questions[currentQuestion].answerOptions.map((answerOption, index) => (
+                  <button
+                    key={index}
+                    className={selectedAnswers[currentQuestion]?.index === index ? styles.active : ''}
+                    onClick={() => handleAnswerOptionClick(index, answerOption.isCorrect)}
+                  >
+                    {answerOption.answerText}
+                  </button>
+                ))}
+              </div>
+              {currentQuestion < questions.length - 1 ? (
+                <button onClick={() => setCurrentQuestion(currentQuestion + 1)}>Next Question</button>
+              ) : (
+                <button onClick={handleSubmitQuiz}>Submit Quiz</button>
+              )}
+            </>
+          )}
         </>
       )}
     </div>
