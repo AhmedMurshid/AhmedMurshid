@@ -73,7 +73,7 @@ const Dental = () => {
     <p>Image credit: <a href="https://teachmeanatomy.info/head/other/child-adult-dentition/" target="_blank" rel="noopener noreferrer">TeachMeAnatomy</a></p>
       </div>
     ),
-    tooth_structure: (
+    Structure: (
       <div id="tooth-structure">
       <h2>Tooth Structure</h2>
       <ul>
@@ -87,7 +87,7 @@ const Dental = () => {
     
   </div>
     ),
-    ciatation: (
+    References: (
       <div id="references">
       <h2>References</h2>
       <ul>
