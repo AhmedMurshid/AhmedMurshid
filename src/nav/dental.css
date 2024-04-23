@@ -9,8 +9,8 @@ body {
 background-color: #95a5a9;
 }
 .container {
-  width: 90%;
-  max-width: 1200px;
+  width: 20%;
+  max-width: 100%;
   margin: auto;
   padding: 20px;
 }
@@ -61,6 +61,8 @@ background-color: #95a5a9;
   outline: none;
   transition: background-color 0.3s, color 0.3s;
 }
+
+
 .tab.active, .tab:hover {
   background-color: #007bff;
   color: #ffffff;
@@ -69,6 +71,7 @@ background-color: #95a5a9;
 /* Content Area Styles */
 .content {
   background: #ffffff;
+  margin-top: 1%;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -110,5 +113,8 @@ strong {
 
 .tooth-anatomy path:hover {
   fill-opacity: 0.8;
+}
+a{
+  color: #000;
 }
 

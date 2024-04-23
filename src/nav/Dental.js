@@ -41,6 +41,9 @@ const Dental = () => {
           <h2>Overview</h2>
           <p>Human teeth are vital components of the digestive system, responsible for mechanically breaking down food through cutting, tearing, and grinding before it is swallowed and digested. These functions are facilitated by two sets of teeth: primary and secondary, also known as permanent teeth.</p>
       </div>
+      <img src="https://images.everydayhealth.com/images/dental-health/four-types-of-teeth-and-how-they-function-1440x810.jpg?sfvrsn=f11b9924_1" alt="Primary and Permanent Dentition" />
+      <p>Image credit: <a href="https://www.everydayhealth.com/dental-health/basics/types-teeth-how-they-function/" target="_blank" rel="noopener noreferrer">everydayhealth.com</a></p>
+    
       </div>
     ),
     primary_permanent: (
@@ -79,27 +82,37 @@ const Dental = () => {
           <li><strong>Pulp:</strong> The soft, innermost part containing nerves and blood vessels.</li>
           <li><strong>Cementum:</strong> This covers the root and helps anchor the tooth within the jawbone.</li>
       </ul>
+      <img src="https://childrenswi.org/-/media/chwlibrary/images/medical-care/dental-care/tooth.gif" alt="Primary and Permanent Dentition" />
+      <p>Image credit: <a href="https://childrenswi.org/medical-care/dental-care/dental-and-oral-health/anatomy-and-development-of-the-mouth-and-teeth" target="_blank" rel="noopener noreferrer">childrenswi.org</a></p>
+    
   </div>
     ),
     ciatation: (
       <div id="references">
       <h2>References</h2>
       <ul>
-          <li><a href="https://en.wikipedia.org/wiki/Human_tooth" target="_blank">Wikipedia contributors, "Human tooth," Wikipedia, The Free Encyclopedia.</a></li>
-          <li><a href="https://teachmeanatomy.info/head/organs/teeth/tooth-development/" target="_blank">TeachMeAnatomy contributors, "Child and Adult Dentition," TeachMeAnatomy.</a></li>
+          <li>
+            <a href="https://teachmeanatomy.info/head/other/child-adult-dentition/" target="_blank">
+              McKernon, R., &amp; Gartshore, L. (2022). Child and Adult Dentition.
+              <i>TeachMeAnatomy</i>.
+              <a href="https://teachmeanatomy.info/head/other/child-adult-dentition/" target="_blank">https://teachmeanatomy.info/head/other/child-adult-dentition/</a>.
+              Accessed April 10, 2024.</a>
+          </li>
+          <br/>
+          <li>
+            <a href="https://childrenswi.org/medical-care/dental-care/dental-and-oral-health/anatomy-and-development-of-the-mouth-and-teeth" target="_blank">
+              Anatomy and Development of the Mouth and Teeth.
+              <i>Children’s Wisconsin.</i>
+              <a href="https://childrenswi.org/medical-care/dental-care/dental-and-oral-health/anatomy-and-development-of-the-mouth-and-teeth" target="_blank">https://childrenswi.org/medical-care/dental-care/dental-and-oral-health/anatomy-and-development-of-the-mouth-and-teeth</a>.
+              Accessed April 20, 2024.</a>
+          </li>
       </ul>
   </div>
     ),
     quiz: (
       <Quiz setQuizScore={setQuizScore} />
      )
-    // anatomy: (
-    //   <div>
-    //     <h2>Interactive Tooth Anatomy</h2>
-    //     <InteractiveTeethDiagram />
-    //     <p>Learn more about each part of the tooth by clicking on it.</p>
-    //   </div>
-    // )
+  
   };
 
   return (
