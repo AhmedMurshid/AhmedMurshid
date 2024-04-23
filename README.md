@@ -7,7 +7,7 @@ Ahmed M Abdullahi's Portfolio
 <img src="src/images/me.jpeg" alt="AHMED" style="border-radius: 50%; width: 150px;">
 
 _Location_: Louisville, KY | [LinkedIn Profile](https://www.linkedin.com/in/ahmed001a/)
-Visit my [my website](https://ahmedmurshid.github.io/AhmedMurshid/).
+Visit [my website](https://ahmedmurshid.github.io/AhmedMurshid/).
 
 
 <div style="display: flex; justify-content: space-between; align-items: center; max-width: 50%;">
@@ -18,7 +18,8 @@ Visit my [my website](https://ahmedmurshid.github.io/AhmedMurshid/).
   <div style="width: 15%;">
     <h2>💻 Most Used Languages</h2>
     <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AhmedMurshid&layout=compact" alt="Top Languages" style="width: 50%; height: auto;">
-  </div>
+<!--       <img src="https://files.oaiusercontent.com/file-ZXZwM6r6SPwxIS8VhGTlDRWS?se=2123-12-22T03%3A11%3A47Z&amp;sp=r&amp;sv=2021-08-06&amp;sr=b&amp;rscc=max-age%3D1209600%2C%20immutable&amp;rscd=attachment%3B%20filename%3D02a54aa0-f6ca-46f2-8e60-64647518b896.png&amp;sig=nQozwsDwzLDXwwLrFad3s6HzA/BN/fjrqWmG8Tfc9ps%3D" class="h-full w-full bg-token-main-surface-secondary" alt="GPT" width="80" height="80"> -->
+  </div> 
 </div>
 
 
