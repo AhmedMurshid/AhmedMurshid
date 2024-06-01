@@ -2,8 +2,6 @@
 import React, { useState } from 'react';
 import './dental.css';
 import Quiz from './Quiz';
-import InteractiveTeethDiagram from './InteractiveToothAnatomy';
-import Tooltip from './Tooltip'; // Assume this is a simple Tooltip component you've created
 
 const Dental = () => {
   const [activeTab, setActiveTab] = useState('Overview');
@@ -92,18 +90,18 @@ const Dental = () => {
       <h2>References</h2>
       <ul>
           <li>
-            <a href="https://teachmeanatomy.info/head/other/child-adult-dentition/" target="_blank">
+            <a href="https://teachmeanatomy.info/head/other/child-adult-dentition/" target="_blank" rel="noopener noreferrer">
               McKernon, R., &amp; Gartshore, L. (2022). Child and Adult Dentition.
               <i>TeachMeAnatomy</i>.
-              <a href="https://teachmeanatomy.info/head/other/child-adult-dentition/" target="_blank">https://teachmeanatomy.info/head/other/child-adult-dentition/</a>.
+              <a href="https://teachmeanatomy.info/head/other/child-adult-dentition/" target="_blank" rel="noopener noreferrer">https://teachmeanatomy.info/head/other/child-adult-dentition/</a>.
               Accessed April 10, 2024.</a>
           </li>
           <br/>
           <li>
-            <a href="https://childrenswi.org/medical-care/dental-care/dental-and-oral-health/anatomy-and-development-of-the-mouth-and-teeth" target="_blank">
+            <a href="https://childrenswi.org/medical-care/dental-care/dental-and-oral-health/anatomy-and-development-of-the-mouth-and-teeth" target="_blank" rel="noopener noreferrer">
               Anatomy and Development of the Mouth and Teeth.
               <i>Children’s Wisconsin.</i>
-              <a href="https://childrenswi.org/medical-care/dental-care/dental-and-oral-health/anatomy-and-development-of-the-mouth-and-teeth" target="_blank">https://childrenswi.org/medical-care/dental-care/dental-and-oral-health/anatomy-and-development-of-the-mouth-and-teeth</a>.
+              <a href="https://childrenswi.org/medical-care/dental-care/dental-and-oral-health/anatomy-and-development-of-the-mouth-and-teeth" target="_blank" rel="noopener noreferrer">https://childrenswi.org/medical-care/dental-care/dental-and-oral-health/anatomy-and-development-of-the-mouth-and-teeth</a>.
               Accessed April 20, 2024.</a>
           </li>
       </ul>

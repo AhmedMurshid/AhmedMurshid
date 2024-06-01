@@ -1,0 +1,51 @@
+.assignment-tracker {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.assignment-details {
+  margin-top: 20px;
+}
+
+.assignment-details h2 {
+  color: #333;
+}
+
+.assignment-details ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.assignment-details li {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.assignment-details a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.assignment-details a:hover {
+  text-decoration: underline;
+}
+
+.react-calendar {
+  max-width: 100%;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.react-calendar__tile--now {
+  background: #ffeb3b !important;
+}
+
+.highlight {
+  background: #90ee90;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+  margin: 0 auto;
+}
