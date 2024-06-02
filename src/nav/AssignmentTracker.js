@@ -8,45 +8,50 @@ const assignments = [
   {
     date: 'June 2, 2024',
     tasks: [
-      { title: 'Unit 1 Assignment - Part One', due: '6/2/24, 11:59 PM', course: 'CJ-202-50-4245: CORRECTIONS IN THE U.S. - SB-Summer 2024', url: 'https://blackboard.louisville.edu/webapps/blackboard/content/listContent.jsp?course_id=_1749748_1&content_id=_27327098_1' },
-      { title: 'Unit 1 Assignment - Part Two', due: '6/2/24, 11:59 PM', course: 'CJ-202-50-4245: CORRECTIONS IN THE U.S. - SB-Summer 2024', url: 'https://blackboard.louisville.edu/webapps/blackboard/content/listContent.jsp?course_id=_1749748_1&content_id=_27327098_1' },
-      { title: 'Unit 2 Assignment - Part One', due: '6/2/24, 11:59 PM', course: 'CJ-202-50-4245: CORRECTIONS IN THE U.S. - SB-Summer 2024', url: 'https://blackboard.louisville.edu/webapps/blackboard/content/listContent.jsp?course_id=_1749748_1&content_id=_27327098_1' },
-      { title: 'Unit 2 Assignment - Part Two', due: '6/2/24, 11:59 PM', course: 'CJ-202-50-4245: CORRECTIONS IN THE U.S. - SB-Summer 2024', url: 'https://blackboard.louisville.edu/webapps/blackboard/content/listContent.jsp?course_id=_1749748_1&content_id=_27327098_1' }
+      { title: 'Unit 1 Assignment - Part One', due: '6/2/24, 11:59 PM', course: 'CJ-202-50-4245: CORRECTIONS IN THE U.S. - SB-Summer 2024', url: 'https://blackboard.louisville.edu/webapps/blackboard/content/listContent.jsp?course_id=_1749748_1&content_id=_27327098_1', googleDocUrl: 'https://docs.google.com/document/d/1MmTdaDpbpC6kcSKAUkAEg2kDqW5mNccgAr4O6e_J3Mg/edit' },
+      { title: 'Unit 1 Assignment - Part Two', due: '6/2/24, 11:59 PM', course: 'CJ-202-50-4245: CORRECTIONS IN THE U.S. - SB-Summer 2024', url: 'https://blackboard.louisville.edu/webapps/blackboard/content/listContent.jsp?course_id=_1749748_1&content_id=_27327098_1', googleDocUrl: 'https://docs.google.com/document/d/1MmTdaDpbpC6kcSKAUkAEg2kDqW5mNccgAr4O6e_J3Mg/edit' },
+      { title: 'Unit 2 Assignment - Part One', due: '6/2/24, 11:59 PM', course: 'CJ-202-50-4245: CORRECTIONS IN THE U.S. - SB-Summer 2024', url: 'https://blackboard.louisville.edu/webapps/blackboard/content/listContent.jsp?course_id=_1749748_1&content_id=_27327098_1', googleDocUrl: 'https://docs.google.com/document/d/1MmTdaDpbpC6kcSKAUkAEg2kDqW5mNccgAr4O6e_J3Mg/edit' },
+      { title: 'Unit 2 Assignment - Part Two', due: '6/2/24, 11:59 PM', course: 'CJ-202-50-4245: CORRECTIONS IN THE U.S. - SB-Summer 2024', url: 'https://blackboard.louisville.edu/webapps/blackboard/content/listContent.jsp?course_id=_1749748_1&content_id=_27327098_1', googleDocUrl: 'https://docs.google.com/document/d/1MmTdaDpbpC6kcSKAUkAEg2kDqW5mNccgAr4O6e_J3Mg/edit' }
     ]
+  },
+  {
+    date: 'June 3, 2024',
+    tasks: [
+      { title: 'Research Project - Submission Deadline for the Proposal', due: '6/3/24, 11:59 AM', course: 'CJ-306-50-4245: CRIMINAL PROCEDURE - SB-Summer 2024', url: 'https://blackboard.louisville.edu/ultra/courses/_1749750_1/outline/edit/document/_29608970_1?courseId=_1749750_1&view=content', googleDocUrl: 'https://docs.google.com/document/d/1MmTdaDpbpC6kcSKAUkAEg2kDqW5mNccgAr4O6e_J3Mg/edit' },
+     ]
   },
   {
     date: 'June 8, 2024',
     tasks: [
-      { title: 'Unit 1 Study Guide', due: '6/8/24, 11:59 PM', course: 'CJ-202-50-4245: CORRECTIONS IN THE U.S. - SB-Summer 2024', url: 'https://blackboard.louisville.edu/webapps/blackboard/content/listContent.jsp?course_id=_1749748_1&content_id=_27327098_1' }
+      { title: 'Unit 1 Study Guide', due: '6/8/24, 11:59 PM', course: 'CJ-202-50-4245: CORRECTIONS IN THE U.S. - SB-Summer 2024', url: 'https://blackboard.louisville.edu/webapps/blackboard/content/listContent.jsp?course_id=_1749748_1&content_id=_27327098_1', googleDocUrl: 'https://docs.google.com/document/d/1MmTdaDpbpC6kcSKAUkAEg2kDqW5mNccgAr4O6e_J3Mg/edit' }
     ]
   },
   {
     date: 'June 9, 2024',
     tasks: [
-      { title: 'Unit 2 Study Guide', due: '6/9/24, 11:59 PM', course: 'CJ-202-50-4245: CORRECTIONS IN THE U.S. - SB-Summer 2024', url: 'https://blackboard.louisville.edu/webapps/blackboard/content/listContent.jsp?course_id=_1749748_1&content_id=_27327098_1' }
+      { title: 'Unit 2 Study Guide', due: '6/9/24, 11:59 PM', course: 'CJ-202-50-4245: CORRECTIONS IN THE U.S. - SB-Summer 2024', url: 'https://blackboard.louisville.edu/webapps/blackboard/content/listContent.jsp?course_id=_1749748_1&content_id=_27327098_1', googleDocUrl: 'https://docs.google.com/document/d/1MmTdaDpbpC6kcSKAUkAEg2kDqW5mNccgAr4O6e_J3Mg/edit' }
     ]
   },
   {
     date: 'June 14, 2024',
     tasks: [
-      { title: 'Discussion Group #1 (6/3-6/14)', due: '6/14/24, 3:01 PM', course: 'CJ-306-50-4245: CRIMINAL PROCEDURE-Summer 2024', url: '' }
+      { title: 'Discussion Group #1 (6/3-6/14)', due: '6/14/24, 3:01 PM', course: 'CJ-306-50-4245: CRIMINAL PROCEDURE-Summer 2024', url: '', googleDocUrl: 'https://docs.google.com/document/d/1MmTdaDpbpC6kcSKAUkAEg2kDqW5mNccgAr4O6e_J3Mg/edit' }
     ]
   },
   {
     date: 'June 24, 2024',
     tasks: [
-      { title: 'Research Project', due: '6/24/24, 3:01 PM', course: 'CJ-306-50-4245: CRIMINAL PROCEDURE-Summer 2024', url: '' }
+      { title: 'Research Project', due: '6/24/24, 3:01 PM', course: 'CJ-306-50-4245: CRIMINAL PROCEDURE-Summer 2024', url: '', googleDocUrl: 'https://docs.google.com/document/d/1MmTdaDpbpC6kcSKAUkAEg2kDqW5mNccgAr4O6e_J3Mg/edit' }
     ]
   },
   {
     date: 'June 28, 2024',
     tasks: [
-      { title: 'Test', due: '6/28/24, 3:01 PM', course: 'CJ-306-50-4245: CRIMINAL PROCEDURE-Summer 2024', url: '' },
-      { title: 'Discussion Group #2 (6/17-6/28)', due: '6/28/24, 3:01 PM', course: 'CJ-306-50-4245: CRIMINAL PROCEDURE-Summer 2024', url: '' }
+      { title: 'Test', due: '6/28/24, 3:01 PM', course: 'CJ-306-50-4245: CRIMINAL PROCEDURE-Summer 2024', url: '', googleDocUrl: 'https://docs.google.com/document/d/1MmTdaDpbpC6kcSKAUkAEg2kDqW5mNccgAr4O6e_J3Mg/edit' },
+      { title: 'Discussion Group #2 (6/17-6/28)', due: '6/28/24, 3:01 PM', course: 'CJ-306-50-4245: CRIMINAL PROCEDURE-Summer 2024', url: '', googleDocUrl: 'https://docs.google.com/document/d/1MmTdaDpbpC6kcSKAUkAEg2kDqW5mNccgAr4O6e_J3Mg/edit' }
     ]
   }
 ];
-
 const getColor = (course) => {
   const colors = {
     'CJ-202-50-4245': '#FFD700', // Gold
@@ -93,7 +98,10 @@ const AssignmentTracker = () => {
                 <li key={idx} style={{ backgroundColor: getColor(task.course) }}>
                   <strong>{task.title}</strong><br />
                   Due date: {task.due} ∙ {task.course}<br />
-                  <a href={task.url} target="_blank" rel="noopener noreferrer">View Assignment</a>
+                  <a href={task.url} target="_blank" rel="noopener noreferrer">View Assignment</a><br />
+                  {task.googleDocUrl && (
+                    <a href={task.googleDocUrl} target="_blank" rel="noopener noreferrer">Google Doc</a>
+                  )}
                 </li>
               ))}
             </ul>
