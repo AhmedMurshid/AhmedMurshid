@@ -1,6 +1,6 @@
 import React from 'react';
 import aboutMeData from '../files/Resume.json';
-import ProfileImage from '../images/me.jpeg'; 
+import ProfileImage from '../images/Ahmed.png'; 
 
 function AboutMe() {
   const {
