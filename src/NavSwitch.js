@@ -10,7 +10,7 @@ function NavigationButtons({
     <>
        
       <div className='all-button'>
-        <button className='button-group' onClick={() => toggleVisibility('aboutMe')}>Just Me</button>
+        {/* <button className='button-group' onClick={() => toggleVisibility('aboutMe')}>Just Me</button> */}
         {/* <button className='button-group' onClick={() => toggleVisibility('projects')}>Projects</button>
         <button className='button-group' onClick={() => toggleVisibility('skills')}>Skills</button>
         <button className='button-group' onClick={() => toggleVisibility('courses')}>Courses</button>
