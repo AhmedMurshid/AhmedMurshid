@@ -15,14 +15,14 @@ function AboutMe() {
   return (
     <div style={{ position: 'relative', margin: '0 auto', maxWidth: '900px', padding: '20px' }}>
       {/* Slideshow images on the left side */}
-      <div style={{ position: 'absolute', left: '-220px', top: '200px', display: 'flex', flexDirection: 'column', gap: '20px' }}>
+      {/* <div style={{ position: 'absolute', left: '-220px', top: '200px', display: 'flex', flexDirection: 'column', gap: '20px' }}>
         <div style={{ transform: 'rotate(10deg)' }}>
           <img src={SlideShowImage1} alt="Slide 1" width="310" height="350" style={{ borderRadius: '20px' }}/>
         </div>
-        {/* <div style={{ transform: 'rotate(5deg)' }}>
+        <div style={{ transform: 'rotate(5deg)' }}>
           <img src={SlideShowImage2} alt="Slide 2" width="240" height="300" style={{ borderRadius: '20px' }}/>
-        </div> */}
-      </div>
+        </div>
+      </div> */}
 
       {/* Slideshow images on the right side */}
       <div style={{ position: 'absolute', right: '-300px', top: '180px', display: 'flex', flexDirection: 'column', gap: '20px' }}>
