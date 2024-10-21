@@ -25,12 +25,12 @@ function AboutMe() {
       </div> */}
 
       {/* Slideshow images on the right side */}
-      <div style={{ position: 'absolute', right: '-300px', top: '180px', display: 'flex', flexDirection: 'column', gap: '20px' }}>
+      {/* <div style={{ position: 'absolute', right: '-300px', top: '180px', display: 'flex', flexDirection: 'column', gap: '20px' }}>
         <div style={{ transform: 'rotate(-10deg)' }}>
           <img src={SlideShowImage3} alt="Slide 3" width="310" height="350" style={{ borderRadius: '20px' }}/>
         </div>
   
-      </div>
+      </div> */}
 
       {/* About Me Section */}
       <h2>About Me</h2>
