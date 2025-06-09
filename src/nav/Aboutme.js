@@ -1,6 +1,6 @@
 import React from 'react';
 import aboutMeData from '../files/Resume.json';
-import ProfileImage from '../images/Ahmed.png'; 
+import ProfileImage from '../images/me.jpeg'; 
 
 
 function AboutMe() {
@@ -18,7 +18,7 @@ function AboutMe() {
       <h2>About Me</h2>
       {/* New introduction paragraph */}
       <p style={{ fontSize: '18px', lineHeight: '1.6', marginBottom: '20px' }}>
-      I'm Ahmed Abdullahi, 23, a Computer Science student at the University of Louisville with a passion for building—whether it's software, databases, 
+      I'm Ahmed Abdullahi, 24, a Computer Science student at the University of Louisville with a passion for building—whether it's software, databases, 
       or AI-driven solutions. I'm eager to keep learning and growing through new opportunities.
       </p>
       <div style={{ textAlign: 'center', marginBottom: '20px' }}>
@@ -67,6 +67,23 @@ function AboutMe() {
             </a>
           </td>
         </tr>
+        <tr>
+        <td style={cellStyle}><strong>GitHub:</strong></td>
+        <td>
+          <a href={contact.github} target="_blank" rel="noopener noreferrer">
+            {contact.github}
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td style={cellStyle}><strong>WayUp:</strong></td>
+        <td>
+          <a href={contact.wayup} target="_blank" rel="noopener noreferrer">
+            {contact.wayup}
+          </a>
+        </td>
+      </tr>
+
         <tr style={{margin: '3px'}}>
           <td style={{ backgroundColor: '#f0f0f0', padding: '3px', borderRadius: '5px', marginBottom:'0px' }}>
             <strong>Education:</strong>

@@ -5,7 +5,10 @@
       "email": "amabdu02@louisville.edu",
       "phone": "(502) 792-5573",
       "location": "Louisville, KY",
-      "linkedin": "https://www.linkedin.com/in/ahmed-murshid/"
+      "linkedin": "https://www.linkedin.com/in/ahmed-murshid/",
+      "github": "https://github.com/AhmedMurshid",
+      "wayup": "https://www.wayup.com/profile/Ahmed-Abdullahi-7ed34b9d47/"
+
     }, 
     "objective": "To leverage data engineering, automation, and scalable software development skills to drive impact in tech-forward environments.",
     "when": "July 2025",
@@ -60,6 +63,13 @@
       ]
     },
     "Projects": [
+      {
+        "language": "Python",
+        "title": "Rocket Launch Delay Prediction (Space Force)",
+        "description": "Built and deployed a machine learning model on AWS EC2 using AutoML (H2O) and Python to predict rocket launch delays. Boosted model accuracy by 50% using real-time weather API data and automated ETL/retraining pipelines. Visualized performance metrics with Matplotlib and Seaborn. (linkedin post listed)",
+        "skills": ["Machine Learning", "Python", "AutoML", "AWS EC2", "Data Visualization", "ETL"],
+        "link": "https://www.linkedin.com/posts/briccdc_stem-ai-rocketlaunch-activity-7273366091106590720-zezt?utm_source=share&utm_medium=member_desktop&rcm=ACoAADvk7aMBDw5ainSo1HKRWxMmSag5US7dP-c"
+      },
       {
         "language": "Python",
         "title": "AI NP-Complete Problems: A Deep Dive into the Chinese Postman Problem",
@@ -175,159 +185,26 @@
       "Trio upward bounds (2019)"
     ],
     "courses": [
-      {
-        "Class": "CSE 420",
-        "Description": "DESIGN/OPERATING SYSTEMS",
-        "Term": "Spring 2024",
-        "Grade": null,
-        "Units": 3.00,
-        "Status": "In ProgressIn Progress",
-        "Professor": null
-      },
-      {
-        "Class": "CSE 496",
-        "Description": "BACS CAPSTONE DESIGN",
-        "Term": "Spring 2024",
-        "Grade": null,
-        "Units": 3.00,
-        "Status": "PlannedPlanned",
-        "Professor": null
-      },
-      {
-        "Class": "CSE 532",
-        "Description": "PYTHON & DATA ANALYTICS",
-        "Term": "Spring 2024",
-        "Grade": null,
-        "Units": 3.00,
-        "Status": "In ProgressIn Progress",
-        "Professor": null
-      },
-      {
-        "Class": "CSE 419",
-        "Description": "INTRO TO ALGORITHMS",
-        "Term": "Fall 2023",
-        "Grade": "B+",
-        "Units": 3.00,
-        "Status": "TakenTaken",
-        "Professor": "Rui Yu"
-      },
-      {
-        "Class": "CSE 525",
-        "Description": "MICROCOMPUTER DESIGN",
-        "Term": "Fall 2023",
-        "Grade": null,
-        "Units": 4.00,
-        "Status": "In CartIn Cart",
-        "Professor": null
-      },
-      {
-        "Class": "CSE 545",
-        "Description": "ARTIFICIAL INTELLIGENCE",
-        "Term": "Fall 2023",
-        "Grade": "A",
-        "Units": 3.00,
-        "Status": "TakenTaken",
-        "Professor": "Roman Yampolskiy"
-      },
-      {
-        "Class": "CSE 551",
-        "Description": "DATA VISUALIZATION",
-        "Term": "Fall 2023",
-        "Grade": "A",
-        "Units": 3.00,
-        "Status": "TakenTaken",
-        "Professor": "Harry Zhang"
-      },
-      {
-        "Class": "CSE 564",
-        "Description": "INTRO TO CRYPTOGRAPHY",
-        "Term": "Fall 2023",
-        "Grade": "B+",
-        "Units": 3.00,
-        "Status": "TakenTaken",
-        "Professor": "Dar-Jen Chang"
-      },
-      {
-        "Class": "CSE 235",
-        "Description": "COMPUTER SYSTEMS AND ORG",
-        "Term": "Fall 2022",
-        "Grade": "B+",
-        "Units": 3.00,
-        "Status": "TakenTaken",
-        "Professor": "Sabur Baidya"
-      },
-      {
-        "Class": "CSE 310",
-        "Description": "DISCRETE STRUCTURES",
-        "Term": "Fall 2022",
-        "Grade": "B",
-        "Units": 3.00,
-        "Status": "TakenTaken",
-        "Professor": "Andrew Karem"
-      },
-      {
-        "Class": "CSE 335",
-        "Description": "INTRODUCTION TO DATABASE",
-        "Term": "Fall 2022",
-        "Grade": "A-",
-        "Units": 3.00,
-        "Status": "TakenTaken",
-        "Professor": "Andrew Karem"
-      },
-      {
-        "Class": "CSE 350",
-        "Description": "INTR. TO SOFTWARE ENG'G",
-        "Term": "Fall 2022",
-        "Grade": "A+",
-        "Units": 3.00,
-        "Status": "TakenTaken",
-        "Professor": "Harry Zhang"
-      },
-      {
-        "Class": "CSE 110",
-        "Description": "MATH FOUNDATION FOR CS",
-        "Term": "Spring 2022",
-        "Grade": "C",
-        "Units": 3.00,
-        "Status": "TakenTaken",
-        "Professor": "Ibrahim Imam"
-      },
-      {
-        "Class": "CSE 302",
-        "Description": "DATA  STRUCTURES",
-        "Term": "Spring 2022",
-        "Grade": "B-",
-        "Units": 3.00,
-        "Status": "TakenTaken",
-        "Professor": "Andrew Karem"
-      },
-      {
-        "Class": "CSE 470",
-        "Description": "MOBILE DEVICE PRGRM",
-        "Term": "Spring 2022",
-        "Grade": "A+",
-        "Units": 3.00,
-        "Status": "TakenTaken",
-        "Professor": "Ibrahim Imam"
-      },
-      {
-        "Class": "CSE 130",
-        "Description": "INTRO TO PROG LANG",
-        "Term": "Spring 2021",
-        "Grade": "B+",
-        "Units": 3.00,
-        "Status": "TakenTaken",
-        "Professor": "Roman Yampolskiy"
-      },
-      {
-        "Class": "CSE 220",
-        "Description": "OO PROG DSGN WITH JAVA",
-        "Term": "Fall 2021",
-        "Grade": "C",
-        "Units": 3.00,
-        "Status": "TakenTaken",
-        "Professor": "Andrew Karem"
-      }
-    ]
+  { "Class": "CSE 120", "Description": "INTRO TO PRG WITH PYTHON", "Term": "Fall 2021", "Grade": "B", "Units": 3.00 },
+  { "Class": "CSE 130", "Description": "INTRO TO PROG LANG", "Term": "Spring 2021", "Grade": "B+", "Units": 3.00 },
+  { "Class": "CSE 220", "Description": "OO PROG DSGN WITH JAVA", "Term": "Fall 2024", "Grade": "A+", "Units": 3.00 },
+  { "Class": "CSE 235", "Description": "COMPUTER SYSTEMS AND ORG", "Term": "Fall 2022", "Grade": "B+", "Units": 3.00 },
+  { "Class": "CSE 298", "Description": "INTERNSHIP EDUCATION SEM.", "Term": "Fall 2022", "Grade": "P", "Units": 0.00 },
+  { "Class": "CSE 299", "Description": "INTERNSHIP I (BACS)", "Term": "Summer 2023", "Grade": "P", "Units": 1.00 },
+  { "Class": "CSE 302", "Description": "DATA STRUCTURES", "Term": "Spring 2022", "Grade": "B-", "Units": 3.00 },
+  { "Class": "CSE 310", "Description": "DISCRETE STRUCTURES", "Term": "Fall 2022", "Grade": "B", "Units": 3.00 },
+  { "Class": "CSE 335", "Description": "INTRODUCTION TO DATABASE", "Term": "Fall 2022", "Grade": "A-", "Units": 3.00 },
+  { "Class": "CSE 350", "Description": "INTR. TO SOFTWARE ENG'G", "Term": "Fall 2022", "Grade": "A+", "Units": 3.00 },
+  { "Class": "CSE 419", "Description": "INTRO TO ALGORITHMS", "Term": "Fall 2023", "Grade": "B+", "Units": 3.00 },
+  { "Class": "CSE 420", "Description": "DESIGN/OPERATING SYSTEMS", "Term": "Spring 2024", "Grade": "B-", "Units": 3.00 },
+  { "Class": "CSE 470", "Description": "MOBILE DEVICE PRGRM", "Term": "Spring 2023", "Grade": "A+", "Units": 3.00 },
+  { "Class": "CSE 496", "Description": "BACS CAPSTONE DESIGN", "Term": "Fall 2024", "Grade": "A", "Units": 3.00 },
+  { "Class": "CSE 532", "Description": "PYTHON & DATA ANALYTICS", "Term": "Spring 2024", "Grade": "A-", "Units": 3.00 },
+  { "Class": "CSE 545", "Description": "ARTIFICIAL INTELLIGENCE", "Term": "Fall 2023", "Grade": "A", "Units": 3.00 },
+  { "Class": "CSE 551", "Description": "DATA VISUALIZATION", "Term": "Fall 2023", "Grade": "A", "Units": 3.00 },
+  { "Class": "CSE 564", "Description": "INTRO TO CRYPTOGRAPHY", "Term": "Fall 2023", "Grade": "B+", "Units": 3.00 },
+  { "Class": "CSE 590", "Description": "SPECIAL TOPICS - NATURAL LANGUAGE PROCESSING", "Term": "Fall 2024", "Grade": "A-", "Units": 3.00 }
+]
+
   
   }
