@@ -45,5 +45,17 @@
   },
   "devDependencies": {
     "gh-pages": "^6.1.1"
+  },
+  "description": "---\r Ahmed M Abdullahi's Portfolio\r ---",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AhmedMurshid/AhmedMurshid.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AhmedMurshid/AhmedMurshid/issues"
   }
 }
