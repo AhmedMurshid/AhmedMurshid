@@ -5,7 +5,7 @@ import Quiz from './Quiz';
 
 const Dental = () => {
   const [activeTab, setActiveTab] = useState('Overview');
-  const [quizScore, setQuizScore] = useState(0);
+  //const [quizScore, setQuizScore] = useState(0);
 
   const handleTabClick = (tab) => {
     setActiveTab(tab);
