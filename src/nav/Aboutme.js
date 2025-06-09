@@ -1,9 +1,9 @@
 import React from 'react';
 import aboutMeData from '../files/Resume.json';
 import ProfileImage from '../images/Ahmed.png'; 
-import SlideShowImage1 from '../images/IMG_2092.jpg';  // Example paths to your additional images
+//import SlideShowImage1 from '../images/IMG_2092.jpg';  // Example paths to your additional images
 // import SlideShowImage2 from '../images/IMG_2290.jpg'; 
-import SlideShowImage3 from '../images/IMG_2298.jpg'; 
+//import SlideShowImage3 from '../images/IMG_2298.jpg'; 
 
 function AboutMe() {
   const {
