@@ -1,6 +1,6 @@
 import React from 'react';
 import aboutMeData from '../files/Resume.json';
-import ProfileImage from '../images/me.jpeg';
+import ProfileImage from '../images/me.jpg';
 
 const cellStyle = {
   backgroundColor: '#f0f0f0',
