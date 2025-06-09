@@ -48,7 +48,7 @@ function AboutMe() {
         <tr style={{margin: '3px'}}>
           <td style={{ backgroundColor: '#f0f0f0', padding: '3px', borderRadius: '5px', marginBottom:'0px' }}>
             <strong>Email:</strong>
-          </td>
+          </td>  
           <td>{contact.email}</td>
         </tr>
         <tr style={{margin: '3px'}}>
