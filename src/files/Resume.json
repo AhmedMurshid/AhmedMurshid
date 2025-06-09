@@ -7,13 +7,13 @@
       "location": "Louisville, KY",
       "linkedin": "https://www.linkedin.com/in/ahmed-murshid/"
     }, 
-    "objective": "Growth",
-    "when": "February 2025",
+    "objective": "To leverage data engineering, automation, and scalable software development skills to drive impact in tech-forward environments.",
+    "when": "July 2025",
     "education": {
-      "degree": "Bachelor of Art in Computer Science",
-      "school": "J.B. Speed School of Engineering, University of Louisville",
+      "degree": "Bachelor degree in Computer Science",
+      "school": "University of Louisville, J.B. Speed School of Engineering",
       "anticipated_graduation": "December 2024",
-      "gpa": 3.45
+      "gpa": 3.5
     },
     
     "skills": {
@@ -26,7 +26,14 @@
         "GitHub",
         "React.js",
         "Git",
-        "Linux"
+        "Linux",
+        "Jupyter",
+        "Pandas",
+        "Matplotlib",
+        "Seaborn",
+        "Oracle SQL Developer",
+        "Toad for Oracle"
+
       ],
       "Programming Languages": [
         "HTML5",
@@ -36,7 +43,11 @@
         "Python Programming",
         "C#",
         "C++",
-        "C"
+        "C",
+        "PL/SQL",
+        "Bash",
+        "PowerShell"
+
 
       ],
       "Database Management": [
@@ -104,13 +115,14 @@
     "work_experience": [
       {
         "company": "UPS",
-        "position": "Oracle Database Design Intern",
+        "position": "Database Analyst Co-op",
         "duration": "May 2023 - Present",
         "location": "Louisville, Kentucky, United States (Hybrid)",
         "responsibilities": [
-          "Collaborated on Oracle database design projects.",
-          "Assisted in the development and maintenance of database systems.",
-          "Contributed to data analysis and optimization efforts."
+          "Automated 90% of schema refresh tasks using PL/SQL.",
+          "Performed data validation and analysis using SQL and Excel.",
+          "Provisioned OCI users and enforced secure role-based access."
+
         ]
       },
       {
