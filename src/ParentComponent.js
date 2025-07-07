@@ -1,7 +1,7 @@
 // ParentComponent.js
 import React, { useState } from 'react';
 import DisplayComponents from './DisplayScreen/DisplayComponets'; // Adjust the import path as needed
-import MyPDF from './files/my-resume.pdf';
+import MyPDF from './files/Ahmed_Abdullahi_Resume_2025.pdf';
 
 function ParentComponent() {
   const [showAboutMe, setShowAboutMe] = useState(true);
