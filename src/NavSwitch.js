@@ -1,25 +1,43 @@
 // src/NavSwitch.js
-import React from 'react';
-import './App.css';
+import React, { useState } from 'react';
+import './NavSwitch.css';
 
-function NavigationButtons({
-  toggleVisibility, // Correctly use the passed toggleVisibility function
-  handleOpenPDF,
-}) {
+function NavSwitch({ toggleVisibility, handleOpenPDF }) {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleNavClick = (section) => {
+    toggleVisibility(section);
+    setIsOpen(false); // close menu on selection
+  };
+
   return (
-    <>
-       
-      <div className='all-button'>
-        <button className='button-group' onClick={() => toggleVisibility('aboutMe')}>Just Me</button>
-        <button className='button-group' onClick={() => toggleVisibility('projects')}>Projects</button>
-        <button className='button-group' onClick={() => toggleVisibility('skills')}>Skills</button>
-        <button className='button-group' onClick={() => toggleVisibility('courses')}>Courses</button>
-        <button className='button-group' onClick={() => toggleVisibility('clubs')}>Clubs</button> 
+    <div className="nav-container">
+      <div className="desktop-nav">
+        <button className="nav-button" onClick={() => handleNavClick('aboutMe')}>About Me</button>
+        <button className="nav-button" onClick={() => handleNavClick('projects')}>Projects</button>
+        <button className="nav-button" onClick={() => handleNavClick('skills')}>Skills</button>
+        <button className="nav-button" onClick={() => handleNavClick('courses')}>Courses</button>
+        <button className="nav-button" onClick={() => handleNavClick('clubs')}>Clubs</button>
+        <button className="nav-button" onClick={handleOpenPDF}>Resume</button>
       </div>
-      
-      <button className='' onClick={handleOpenPDF}>Print Resume</button>
-    </>
+
+      <div className="mobile-nav">
+        <button className="hamburger" onClick={() => setIsOpen(!isOpen)}>
+          ☰
+        </button>
+        {isOpen && (
+          <div className="mobile-menu glass-box">
+            <button onClick={() => handleNavClick('aboutMe')}>About Me</button>
+            <button onClick={() => handleNavClick('projects')}>Projects</button>
+            <button onClick={() => handleNavClick('skills')}>Skills</button>
+            <button onClick={() => handleNavClick('courses')}>Courses</button>
+            <button onClick={() => handleNavClick('clubs')}>Clubs</button>
+            <button onClick={handleOpenPDF}>Resume</button>
+          </div>
+        )}
+      </div>
+    </div>
   );
 }
 
-export default NavigationButtons;
+export default NavSwitch;

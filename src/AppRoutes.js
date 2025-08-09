@@ -1,25 +1,26 @@
-import React from 'react';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+// === Patch: src/AppRoutes.js (wrap routes in SiteLayout) ===
+// Replace the whole file with the following if you prefer the layout on all pages
+import React from "react";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { SiteLayout } from "./components";
+import ParentComponent from "./ParentComponent";
+import AssignmentTracker from "./nav/AssignmentTracker";
+import NotesPage from "./nav/NotesPage";
+import SearchPaper from "./nav/SearchPaper";
+import Contact from "./nav/Contact.jsx";
 
-import ParentComponent from './ParentComponent';
-// import Dental from './nav/Dental';
-import AssignmentTracker from './nav/AssignmentTracker';
-import NotesPage from './nav/NotesPage'; 
-import SearchPaper from './nav/SearchPaper'; // Import the SearchPaper component
-
-const AppRoutes = () => {
+export default function AppRoutes(){
   return (
     <Router>
-      <Routes>
-        <Route path="/" element={<ParentComponent />} />
-        {/* <Route path="/dental" element={<Dental />} /> */}
-        <Route path="/a1" element={<AssignmentTracker />} />
-        <Route path="/notes" element={<NotesPage />} />
-        <Route path="/search-paper" element={<SearchPaper />} /> {/* Add the route for the search paper */}
-        {/* Your other routes */}
-      </Routes>
+      <SiteLayout>
+        <Routes>
+          <Route path="/" element={<ParentComponent />} />
+          <Route path="/a1" element={<AssignmentTracker />} />
+          <Route path="/notes" element={<NotesPage />} />
+          <Route path="/search-paper" element={<SearchPaper />} />
+          <Route path="/contact" element={<Contact />} />
+          </Routes>
+      </SiteLayout>
     </Router>
   );
-};
-
-export default AppRoutes;
+}
