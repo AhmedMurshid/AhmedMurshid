@@ -1,17 +1,20 @@
-
-// === src/components/Sections.jsx ===
-// Lightweight, content-agnostic sections. Replace \"Reason\" with real copy later.
+// src/components/Sections.jsx
 import React from "react";
+import { Link } from "react-router-dom";
+
 
 export function Hero() {
   return (
     <section className="section hero">
       <div className="container hero-inner">
-        <h1 className="h1">A Clear Reason to Visit</h1>
-        <p className="sub">State the Reason here — what this site helps with in one crisp line.</p>
+        <h1 className="h1">Ahmed Abdullahi — Building Ideas Into Reality</h1>
+        <p className="sub">
+          I’m a Computer Science student and full-stack developer passionate about crafting efficient, visually engaging, and user-focused solutions.
+        </p>
         <div className="hero-actions">
-          <a href="#get-started" className="button">Get Started</a>
-          <a href="#learn" className="button button--ghost">Learn More</a>
+          {/* <a href="#projects" className="button">View My Work</a> */}
+          {/* <a href="#contact" className="button button--ghost">Get in Touch</a> */}
+          <Link to="/contact" className="button button--ghost">Get in Touch</Link>
         </div>
       </div>
     </section>
@@ -20,9 +23,9 @@ export function Hero() {
 
 export function FeatureGrid() {
   const items = [
-    { title: "Reason #1", body: "Quick point explaining the value." },
-    { title: "Reason #2", body: "Another benefit in plain language." },
-    { title: "Reason #3", body: "One sentence outcome users get." },
+    { title: "Full-Stack Development", body: "From React front-ends to Django back-ends, I build complete, scalable solutions." },
+    { title: "Creative Problem Solving", body: "I approach challenges with curiosity and deliver practical, user-friendly results." },
+    { title: "Continuous Learning", body: "Always exploring new technologies to stay ahead and improve my craft." },
   ];
   return (
     <section className="section features">
@@ -42,8 +45,10 @@ export function Callout() {
   return (
     <section className="section callout">
       <div className="container callout-inner">
-        <h2 className="h2">Ready because of the Reason?</h2>
-        <p>Give users one focused next step — book, read, or contact.</p>
+        <h2 className="h2">Let’s Build Something Great Together</h2>
+        <p>
+          Whether it’s a web app, automation script, or creative side project — I’m always open to collaboration.
+        </p>
         <a className="button" href="#contact">Contact Me</a>
       </div>
     </section>

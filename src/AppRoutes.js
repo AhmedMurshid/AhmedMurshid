@@ -7,6 +7,7 @@ import ParentComponent from "./ParentComponent";
 import AssignmentTracker from "./nav/AssignmentTracker";
 import NotesPage from "./nav/NotesPage";
 import SearchPaper from "./nav/SearchPaper";
+import Contact from "./nav/Contact.jsx";
 
 export default function AppRoutes(){
   return (
@@ -17,7 +18,8 @@ export default function AppRoutes(){
           <Route path="/a1" element={<AssignmentTracker />} />
           <Route path="/notes" element={<NotesPage />} />
           <Route path="/search-paper" element={<SearchPaper />} />
-        </Routes>
+          <Route path="/contact" element={<Contact />} />
+          </Routes>
       </SiteLayout>
     </Router>
   );

@@ -3,6 +3,9 @@ import React, { useState } from "react";
 import DisplayComponents from "./DisplayScreen/DisplayComponets";
 import MyPDF from "./files/Ahmed_Abdullahi_Resume_2025.pdf";
 import { Hero, FeatureGrid, Callout } from "./components";
+import "./components/Site.css";
+
+
 
 export default function ParentComponent(){
   const [showAboutMe, setShowAboutMe] = useState(true);
