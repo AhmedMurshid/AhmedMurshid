@@ -1,86 +1,33 @@
-/* General button styles */
-.all-button {
-  margin: auto;
-  width: 100%;
+body {
+  min-height: 100vh;
+  background: 
+    repeating-linear-gradient(
+      120deg, 
+      #e0e7ff 0px, 
+      #e0e7ff 2px, 
+      transparent 2px, 
+      transparent 40px
+    ),
+    repeating-linear-gradient(
+      -120deg, 
+      #c3e0fa 0px, 
+      #f0f8ff 2px, 
+      transparent 2px, 
+      transparent 40px
+    ),
+    linear-gradient(135deg, #d7e0fe 0%, #f0f8ff 100%);
+  background-size: 80px 80px, 80px 80px, cover;
+  animation: waveGridLeft 8s linear infinite, waveGridRight 10s linear infinite;
+  position: relative;
+  overflow-x: hidden;
 }
 
-/* Fixed position resume button at the bottom */
-.resume-button {
-  position: fixed; 
-  bottom: 0;       
-  left: 10px; /* Added px to define unit */     
-  width: 100%;     
-  z-index: 1000;
+@keyframes waveGridLeft {
+  0% { background-position: 0 0, 0 0, center; }
+  100% { background-position: 80px 0, 0 0, center; }
 }
 
-/* Styles for the first group of buttons */
-.button-group1 {
-  background-color: aqua;
-  width: 25%;
-  padding: 5px;
-  margin: 10px auto; /* Adjusted for spacing around */
-  font-weight: bold; 
-  cursor: pointer; /* Hand cursor on hover */
-  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover */
-}
-
-/* Styles for a generic group of buttons */
-.button-group {
-  width: 20%;
-  padding: 5px;
-  margin: 10px auto; /* Adjusted for spacing around */
-  cursor: pointer; /* Hand cursor on hover */
-  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover */
-}
-
-/* Hover effects for both button groups */
-.button-group:hover, .button-group1:hover {
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-  background-color: #727374; 
-  color: white;
-}
-
-/* Application styling */
-.App {
-  background-color: #94aed6;
-  color: #000000;
-  font-family: 'Arial', sans-serif; 
-  padding: 20px; /* Adjusted for better spacing */
-}
-
-/* Navigation styling */
-.qnav {
-  background-color: #cecece;
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-  border: 1px solid black;
-  border-radius: 15px;
-  padding: 10px; /* Added padding for internal spacing */
-  margin-bottom: 20px; /* Space below navigation */
-}
-
-/* Table styling */
-table {
-  width: 80%; /* Adjust width as needed */
-  margin-left: auto;
-  margin-right: auto;
-  border-collapse: collapse;
-}
-
-td {
-  padding: 8px;
-  text-align: left;
-}
-
-td:first-child {
-  font-weight: bold;
-  text-align: right;
-}
-
-a {
-  color: #2efa00; /* Updated link color for a modern look */
-  text-decoration: none; /* Remove underline */
-}
-
-a:hover {
-  text-decoration: underline; /* Underline on hover for clarity */
+@keyframes waveGridRight {
+  0% { background-position: 0 0, 0 0, center; }
+  100% { background-position: 0 0, 80px 0, center; }
 }
