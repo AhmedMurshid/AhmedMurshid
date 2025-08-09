@@ -1,0 +1,66 @@
+
+/* // === src/components/Site.css === */
+:root{
+  --bg: #0b0f17;
+  --panel: #0f1724;
+  --card: #111a2e;
+  --text: #e6edf7;
+  --muted: #a9b3c7;
+  --brand: #6aa6ff;
+  --brand-ink: #0e4ab8;
+  --border: #21304b;
+  --ring: rgba(106,166,255,.35);
+}
+*{box-sizing:border-box}
+html,body,#root,.App,.site-root{height:100%}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,Segoe UI,Roboto,Ubuntu,\"Helvetica Neue\",Arial}
+
+.container{width:min(1100px,92vw);margin-inline:auto}
+.h1{font-size:clamp(28px,4.5vw,40px);line-height:1.2;margin:0 0 .5rem}
+.h2{font-size:clamp(22px,3.2vw,28px);margin:.5rem 0}
+.h3{font-size:18px;margin:.25rem 0 .5rem}
+.sub{color:var(--muted);max-width:60ch}
+.button{display:inline-block;padding:.65rem 1rem;border-radius:10px;border:1px solid var(--brand);background:var(--brand);color:#041327;text-decoration:none;font-weight:600}
+.button--ghost{background:transparent;color:var(--text);border-color:var(--border)}
+
+.site-header{position:sticky;top:0;z-index:50;background:linear-gradient(180deg,rgba(11,15,23,.96),rgba(11,15,23,.86));backdrop-filter:saturate(1.2) blur(6px);border-bottom:1px solid var(--border)}
+.header-row{display:flex;align-items:center;gap:12px;min-height:64px}
+.brand{display:flex;align-items:center;gap:10px;color:var(--text);text-decoration:none;font-weight:700}
+.brand-mark{width:28px;height:28px;border-radius:6px;background:radial-gradient(75% 75% at 25% 25%,#9bc3ff 0%,#6aa6ff 40%,#2f5dd1 100%);box-shadow:0 0 0 4px var(--ring)}
+.brand-text{letter-spacing:.2px}
+
+.primary-nav{margin-left:auto;display:flex;gap:18px}
+.nav-link{color:var(--muted);text-decoration:none;padding:.4rem .2rem;border-radius:8px}
+.nav-link:hover{color:var(--text)}
+
+.header-cta{margin-left:6px}
+
+.site-main{padding-block:28px}
+.site-footer{border-top:1px solid var(--border);padding:24px 0;background:rgba(15,23,36,.7)}
+.footer-row{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.footer-link{color:var(--muted);text-decoration:none;margin-left:12px}
+.footer-link:hover{color:var(--text)}
+
+.section{padding:32px 0}
+.hero{padding:48px 0}
+.hero-inner{display:grid;gap:14px;align-items:center;grid-template-columns:1fr}
+
+.grid{display:grid;gap:16px;grid-template-columns:repeat(3,minmax(0,1fr))}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px;box-shadow:0 12px 30px rgba(0,0,0,.25)}
+
+.callout{background:linear-gradient(180deg,rgba(15,23,36,.7),rgba(15,23,36,.4));border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.callout-inner{display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+
+/* Make your existing Display.css look good on the dark theme */
+.zoom-content-responsive{background:var(--panel)!important;border-color:var(--border)!important}
+.sidebar-box{background:var(--panel)!important;border-color:var(--border)!important;color:var(--text)}
+.sidebar-box.active{background:#0e1730!important;border-color:var(--brand)!important}
+
+@media (max-width: 920px){
+  .grid{grid-template-columns:1fr}
+  .primary-nav{display:none}
+}
+
+
+
+

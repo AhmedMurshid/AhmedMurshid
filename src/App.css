@@ -1,4 +1,4 @@
-body {
+/* body {
   min-height: 100vh;
   background: 
     repeating-linear-gradient(
@@ -30,4 +30,9 @@ body {
 @keyframes waveGridRight {
   0% { background-position: 0 0, 0 0, center; }
   100% { background-position: 0 0, 80px 0, center; }
-}
+} */
+
+
+/* // === Optional: src/App.css (ensure baseline styles exist) === */
+/* If you already have App.css, just keep this minimal baseline */
+.App{min-height:100%;}
