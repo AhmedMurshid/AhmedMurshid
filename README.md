@@ -14,11 +14,6 @@ layout: default
 
 ---
 
-## 💼 Portfolio Overview
-
-<img src="Capture.JPG" alt="Portfolio Overview" style="width: 100%; max-width: 600px;">
-
-
 Projects include:
 - Rocket launch delay prediction using AutoML on AWS
 - Oracle database automation at UPS
