@@ -4,7 +4,7 @@ import PageFrame from '../PageFrame';
 import AboutMe  from '../nav/Aboutme';
 import Projects from '../nav/Projects';
 import Skills   from '../nav/Skills';
-import Courses  from '../nav/Courses';
+// import Courses  from '../nav/Courses';
 import './Display.css';
 
 const sections = [
@@ -16,7 +16,8 @@ const sections = [
 
 function DisplayComponents(props) {
   const {
-    showAboutMe, showProjects, showSkills, showCourses,
+    showAboutMe, showProjects, showSkills, 
+    // showCourses,
     toggleVisibility
   } = props;
 

@@ -1,7 +1,7 @@
 // src/nav/Aboutme.js
 import React from 'react';
 import aboutMeData from '../files/Resume.json';
-import ProfileImage from '../images/me.jpg';
+// import ProfileImage from '../images/me.jpg';
 import './Aboutme.css';
 
 function AboutMe() {
